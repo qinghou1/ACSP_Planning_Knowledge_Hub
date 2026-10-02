@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A shared resource hub for planning and allied fields, with committee collections and cross-university collaboration.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Planning Knowledge Hub</title>
+  <style>/*__STYLES__*/</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="topline"><div class="container"><span class="scope-line">Planning and allied fields · Education, research, and practice</span><span><span class="status-dot" aria-hidden="true"></span><span id="connectionLabel">Working prototype · Shared publishing not connected</span></span></div></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="Planning Knowledge Hub home"><span class="brand-mark" aria-hidden="true">PK</span><span><span data-site-title>Planning Knowledge Hub</span><span class="brand-sub">Many fields. Shared knowledge.</span></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button>
+    <nav id="site-navigation" aria-label="Primary navigation"><ul>
+      <li><a href="#home">Home</a></li><li><a href="#explore">Explore</a></li><li><a href="#collections">Collections</a></li><li><a class="nav-contribute" href="#contribute">Contribute</a></li><li><a href="#developers">Developers</a></li><li><a href="#about">About</a></li>
+    </ul></nav>
+  </div>
+</header>
+<main id="main">
+  <noscript><div class="container notice warning">JavaScript is required for search, filters, and local contribution tools. This page sends no submissions without an explicit handoff. The source package includes editable JSON resource files.</div></noscript>
+  <section class="hero section-anchor" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Education · Research · Practice</div>
+          <h1 data-site-title>Planning Knowledge Hub</h1>
+          <p class="lede">A shared resource hub for planning and allied fields. Discover teaching materials, research, methods, and practical knowledge contributed by committees, universities, and the wider community.</p>
+          <div class="button-row"><a class="btn" href="#explore">Explore resources <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#contribute">Contribute a resource</a></div>
+          <p class="hero-caption">AI in Planning remains a collection, not a boundary.</p>
+        </div>
+        <aside class="hero-aside" aria-label="An inclusive and collaborative platform">
+          <div class="small-caps">One platform. Many contributors.</div>
+          <h2>Shared by the community.<br>Built together.</h2>
+          <div class="principle-row"><span class="principle-num">01</span><div><strong>Across fields</strong><p>Resources do not need an AI focus to belong here.</p></div></div>
+          <div class="principle-row"><span class="principle-num">02</span><div><strong>Across committees</strong><p>Groups can organize collections and prepare their own contributions.</p></div></div>
+          <div class="principle-row"><span class="principle-num">03</span><div><strong>Across universities</strong><p>Students and developers can co-design the site and share maintenance.</p></div></div>
+        </aside>
+      </div>
+      <div class="hero-bottom"><span><strong>3</strong> resource domains</span><span><strong>12</strong> planning tracks</span><span><strong>Open to</strong> allied fields and new collections</span></div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="domainsHeading">
+    <div class="container">
+      <div class="section-heading"><div><div class="eyebrow">Explore by domain</div><h2 id="domainsHeading">Knowledge for every part of planning.</h2></div></div>
+      <div class="domain-grid">
+        <article class="card domain-card"><div><span class="card-number">01 / EDUCATION</span><h3>Teaching & learning</h3><p>Courses, syllabi, assignments, tutorials, and teaching approaches across planning and related disciplines.</p></div><a class="text-link" href="#education" data-domain="Education">Browse education <span aria-hidden="true">→</span></a></article>
+        <article class="card domain-card"><div><span class="card-number">02 / RESEARCH</span><h3>Methods & evidence</h3><p>Projects, publications, datasets, code, and methods connecting planning questions with other fields.</p></div><a class="text-link" href="#research" data-domain="Research">Browse research <span aria-hidden="true">→</span></a></article>
+        <article class="card domain-card"><div><span class="card-number">03 / PRACTICE</span><h3>Applications & guidance</h3><p>Case studies, policy guidance, community tools, and lessons from planning and public-sector practice.</p></div><a class="text-link" href="#practice" data-domain="Practice">Browse practice <span aria-hidden="true">→</span></a></article>
+      </div>
+    </div>
+  </section>
+  <section class="section soft section-anchor" id="explore" aria-labelledby="exploreHeading">
+    <div class="container">
+      <div class="section-heading"><div><div class="eyebrow">Search the shared library</div><h2 id="exploreHeading">Find what you need.</h2></div><p>Browse across domains, fields, planning tracks, and collections. Published resource titles open the original source in a new tab.</p></div>
+      <div class="view-bar"><div class="segmented" role="group" aria-label="Catalog view"><button type="button" data-view="published" aria-pressed="true">Published <span id="publishedCount">0</span></button><button type="button" data-view="examples" aria-pressed="false">Example entries</button><button type="button" data-view="drafts" aria-pressed="false">My drafts <span id="draftCount">0</span></button></div><span class="view-note" id="catalogNote">The public catalog is ready for its first resources.</span></div>
+      <div id="exampleNotice" class="notice warning" hidden style="margin-bottom:18px">These are fictional display examples, not published resources or committee endorsements. Example titles have no external resource link.</div>
+      <div id="draftNotice" class="notice warning" hidden style="margin-bottom:18px">Only drafts saved in this browser appear here. They are not published, synchronized, or shared with other contributors.</div>
+      <div class="filters" aria-label="Resource filters">
+        <div class="search-row"><div class="field"><label for="search">Search resources</label><input id="search" type="search" placeholder="Title, description, field, institution, or keyword" autocomplete="off"></div><div class="field"><label for="sort">Sort by</label><select id="sort"><option value="title">Title A–Z</option><option value="domain">Domain</option></select></div></div>
+        <div class="filter-grid">
+          <div class="field"><label for="domain">Domain</label><select id="domain"><option value="">All domains</option></select></div>
+          <div class="field"><label for="fieldFilter">Field / discipline</label><select id="fieldFilter"><option value="">All fields</option></select></div>
+          <div class="field"><label for="planningTopic">Planning topic</label><select id="planningTopic"><option value="">All planning tracks</option></select></div>
+          <div class="field"><label for="collectionFilter">Collection / group</label><select id="collectionFilter"><option value="">All collections</option></select></div>
+        </div>
+        <details class="advanced"><summary>More filters: resource type and method</summary><div class="filter-grid"><div class="field"><label for="resourceType">Resource type</label><select id="resourceType"><option value="">All types</option></select></div><div class="field"><label for="methodFilter">Method / tool</label><select id="methodFilter"><option value="">All methods, including non-AI</option></select></div></div></details>
+      </div>
+      <div class="result-toolbar"><span id="resultCount" class="result-count" role="status" aria-live="polite"></span><button id="clearFilters" class="link-button" type="button">Clear filters</button></div>
+      <div class="resource-list" id="resourceList"></div>
+    </div>
+  </section>
+  <section class="section section-anchor" id="collections" aria-labelledby="collectionsHeading">
+    <div class="container">
+      <div class="section-heading"><div><div class="eyebrow">Committees, groups & universities</div><h2 id="collectionsHeading">A place for every contribution.</h2></div><a class="btn secondary" href="#contribute" data-open-tab="collection">Propose a collection</a></div>
+      <p class="section-intro">Collections give groups their own space within one searchable library. A resource can appear in more than one collection and connect multiple fields.</p>
+      <div class="notice" style="margin-bottom:24px">Starter collections below demonstrate the structure. They are not official committee assignments; organizers and published content have not yet been assigned. New groups are not limited to these examples.</div>
+      <div class="collection-grid" id="collectionGrid"></div>
+    </div>
+  </section>
+  <section class="section soft section-anchor" id="contribute" aria-labelledby="contributeHeading">
+    <div class="container">
+      <div class="section-heading"><div><div class="eyebrow">Contribute without editing the website</div><h2 id="contributeHeading">Share knowledge. Start a collection.</h2></div><p>Prepare a resource or collection through the form. Save a local draft, download a structured file, or continue to GitHub once the shared repository is connected.</p></div>
+      <div class="segmented" role="tablist" aria-label="Contribution type"><button id="tab-resource" role="tab" aria-selected="true" aria-controls="panel-resource" tabindex="0" data-tab="resource" type="button">Add / update a resource</button><button id="tab-collection" role="tab" aria-selected="false" aria-controls="panel-collection" tabindex="-1" data-tab="collection" type="button">Propose a collection</button><button id="tab-drafts" role="tab" aria-selected="false" aria-controls="panel-drafts" tabindex="-1" data-tab="drafts" type="button">Local drafts & import</button></div>
+      <div class="form-layout">
+        <div>
+          <div id="panel-resource" role="tabpanel" aria-labelledby="tab-resource" class="form-card">
+            <h3 id="resourceFormHeading">Prepare a resource</h3><p class="muted small">An asterisk (*) marks required fields. AI methods and planning tracks are optional.</p>
+            <form id="resourceForm">
+              <input type="hidden" id="recordId"><input type="hidden" id="recordAction" value="add">
+              <div class="form-grid">
+                <div class="field full"><label for="resourceTitle">Resource title *</label><input id="resourceTitle" required maxlength="160"></div>
+                <div class="field full"><label for="resourceUrl">Original resource URL *</label><input id="resourceUrl" type="url" required maxlength="1500" placeholder="https://"><div class="help">Use an http or https link to the original source. Do not enter private access tokens or sign-in links.</div></div>
+                <div class="field"><label for="formDomain">Domain *</label><select id="formDomain" required><option value="">Select a domain</option></select></div>
+                <div class="field"><label for="formType">Resource type *</label><select id="formType" required><option value="">Select a type</option></select></div>
+                <fieldset class="full"><legend>Field / discipline * <span class="muted small">(select one or more)</span></legend><div id="formFields" class="check-grid"></div><div class="help">Choose Other / Interdisciplinary when needed. Add specific fields as keywords below.</div></fieldset>
+                <div class="field full"><label for="resourceDescription">Short description * <span class="muted">(50–100 words)</span></label><textarea id="resourceDescription" rows="5" required maxlength="2200" aria-describedby="wordCount" placeholder="What is the resource, why is it useful, and who could use it?"></textarea><div id="wordCount" class="help">0 words · Target: 50–100 words</div></div>
+                <div class="full form-subheading"><h3>Help others find the resource</h3><p>Use only the categories that apply. Non-AI and interdisciplinary resources are welcome.</p></div>
+                <details class="full"><summary>Planning tracks <span class="muted">(optional, select any that apply)</span></summary><div id="formTopics" class="check-grid" style="margin-top:10px"></div></details>
+                <fieldset class="full"><legend>Collection / contributing group <span class="muted small">(optional)</span></legend><div id="formCollections" class="check-grid"></div><div class="help">Not part of a group? Leave this blank. To add a new group, use the collection form.</div></fieldset>
+                <div class="field"><label for="formMethod">Method / tool <span class="muted">(optional)</span></label><input id="formMethod" list="methodOptions" maxlength="120" placeholder="For example, community engagement"><datalist id="methodOptions"></datalist></div>
+                <div class="field"><label for="formKeywords">Other topics / keywords</label><input id="formKeywords" maxlength="350" placeholder="Separate keywords with commas"></div>
+                <div class="field"><label for="institution">Institution / organization</label><input id="institution" maxlength="180" placeholder="Public attribution, if appropriate"></div>
+                <div class="field"><label for="contributor">Contributor name</label><input id="contributor" maxlength="120" placeholder="Public display name (optional)"></div>
+                <div class="field"><label for="resourceDate">Date / version</label><input id="resourceDate" maxlength="60" placeholder="For example, 2026 or v1.0"></div>
+                <div class="field"><label for="geography">Geography / applicability</label><input id="geography" maxlength="140" placeholder="Location or general applicability"></div>
+                <div class="field full"><label for="audience">Intended audience</label><input id="audience" maxlength="180" placeholder="For example, students, faculty, practitioners, community groups"></div>
+                <div class="field full"><label for="license">Reuse / attribution notes</label><textarea id="license" rows="2" maxlength="700" placeholder="Describe known reuse conditions, or state that they are not specified."></textarea><div class="help">Linking to a resource does not grant permission to reproduce it. Do not upload third-party full text here.</div></div>
+                <label class="full check-line"><input id="resourceConsent" type="checkbox" required><span>I have checked that the information entered here is appropriate to share publicly. I have not included private contact details, credentials, or confidential material.</span></label>
+                <div class="full button-row"><button class="btn" type="submit">Preview & save locally</button><button class="link-button" id="resetResource" type="button">Clear form / start new</button></div>
+              </div>
+            </form>
+            <div id="resourceStatus" role="status" tabindex="-1" class="status-message" hidden></div>
+            <div id="resourcePreview" class="preview-panel" hidden><h3>Your contribution packet</h3><div id="resourcePreviewCard"></div><div class="button-row" style="margin-top:16px"><button class="btn secondary compact" type="button" id="downloadResource">Download JSON</button><button class="btn secondary compact" type="button" id="copyResource">Copy submission</button><a class="btn compact" id="resourceGitHub" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener noreferrer">Continue on GitHub</a></div><p class="help" id="resourceHandoffNote"></p><details><summary>View / select submission text</summary><label class="sr-only" for="resourcePacketText">Resource submission text</label><textarea id="resourcePacketText" rows="8" readonly></textarea></details></div>
+          </div>
+          <div id="panel-collection" role="tabpanel" aria-labelledby="tab-collection" class="form-card" hidden>
+            <h3>Prepare a collection</h3><p class="muted small">Any relevant committee, group, or university collaboration can propose a collection. Local creation does not assign official status or editing permissions.</p>
+            <form id="collectionForm"><input id="collectionId" type="hidden"><div class="form-grid">
+              <div class="field full"><label for="collectionTitle">Collection name *</label><input id="collectionTitle" maxlength="140" required placeholder="For example, Community Health and Planning"></div>
+              <div class="field"><label for="organizerType">Type of group *</label><select id="organizerType" required><option value="">Select a group type</option></select></div>
+              <div class="field"><label for="organizer">Committee / group name</label><input id="organizer" maxlength="180" placeholder="Leave blank if not yet assigned"></div>
+              <div class="field full"><label for="collectionInstitution">Participating institution(s)</label><input id="collectionInstitution" maxlength="250" placeholder="Optional public attribution"></div>
+              <div class="field full"><label for="collectionDescription">Collection description * <span class="muted">(20–100 words)</span></label><textarea id="collectionDescription" rows="5" maxlength="2200" required placeholder="Describe the collection's scope, audience, and intended contributions."></textarea><div id="collectionWordCount" class="help">0 words · Target: 20–100 words</div></div>
+              <fieldset class="full"><legend>Field / discipline * <span class="muted small">(select one or more)</span></legend><div id="collectionFields" class="check-grid"></div></fieldset>
+              <details class="full"><summary>Associated planning tracks <span class="muted">(optional)</span></summary><div id="collectionTopics" class="check-grid" style="margin-top:10px"></div></details>
+              <label class="full check-line"><input id="collectionConsent" type="checkbox" required><span>This information is suitable for public sharing. I understand that this draft does not create an official committee or grant repository access.</span></label>
+              <div class="full button-row"><button class="btn" type="submit">Preview & save locally</button><button class="link-button" id="resetCollection" type="button">Clear form / start new</button></div>
+            </div></form>
+            <div id="collectionStatus" role="status" tabindex="-1" class="status-message" hidden></div>
+            <div id="collectionPreview" class="preview-panel" hidden><h3>Your collection packet</h3><div id="collectionPreviewCard"></div><div class="button-row" style="margin-top:16px"><button class="btn secondary compact" type="button" id="downloadCollection">Download JSON</button><button class="btn secondary compact" type="button" id="copyCollection">Copy submission</button><a class="btn compact" id="collectionGitHub" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener noreferrer">Continue on GitHub</a></div><p class="help" id="collectionHandoffNote"></p><details><summary>View / select submission text</summary><label class="sr-only" for="collectionPacketText">Collection submission text</label><textarea id="collectionPacketText" rows="8" readonly></textarea></details></div>
+          </div>
+          <div id="panel-drafts" role="tabpanel" aria-labelledby="tab-drafts" class="form-card" hidden>
+            <h3>Local workspace</h3><p class="muted small">Drafts are stored only in this browser when storage is available. They are not a shared database, login account, or published catalog. Export them before switching devices or clearing browser data.</p>
+            <div class="button-row"><button class="btn secondary compact" id="downloadAllDrafts" type="button">Export all local drafts</button><button class="link-button" id="clearAllDrafts" type="button">Delete all local drafts</button></div>
+            <div id="draftsList" class="drafts-list"></div>
+            <div class="import-box"><label for="importFile">Import a resource, collection, or workspace JSON file</label><input id="importFile" type="file" accept=".json,application/json"><p class="help">Imports are validated and remain local drafts. Matching IDs replace local drafts only; published data is never overwritten. Maximum file size: 1 MB.</p></div>
+            <div id="workspaceStatus" class="status-message" role="status" tabindex="-1" hidden></div>
+          </div>
+        </div>
+        <aside class="form-aside">
+          <div class="card"><div class="small-caps">A practical contribution path</div><h3 style="margin-top:9px">You prepare. The group maintains.</h3><div class="step"><span class="step-number">1</span><div><strong>Prepare a contribution</strong><p>Use this form to create a complete entry without changing HTML or JavaScript.</p></div></div><div class="step"><span class="step-number">2</span><div><strong>Share the packet</strong><p>Download the JSON file for a maintainer, or open a GitHub issue after repository setup.</p></div></div><div class="step"><span class="step-number">3</span><div><strong>Update the shared library</strong><p>A repository maintainer adds the data and publishes the updated site. Groups can maintain their own data files once access is assigned.</p></div></div></div>
+          <div class="notice"><strong>No automatic publishing.</strong><br>This static version has no shared submission database or sign-in system. Nothing is sent when you save a draft. A connected repository and assigned maintainers are needed for public updates.</div>
+          <div class="card"><h3>For regular contributors</h3><p class="muted small">Committee editors can change their collection and resource JSON files through the shared repository instead of requesting an HTML change. Cross-listed resources need only one source record.</p><a class="text-link" href="#developers" style="display:block;margin-top:14px">See the collaboration model →</a></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <section class="section dev-section section-anchor" id="developers" aria-labelledby="developersHeading">
+    <div class="container">
+      <div class="section-heading"><div><div class="eyebrow">Open development</div><h2 id="developersHeading">Built across universities.<br>Maintained together.</h2></div><p>A shared source repository lets student developers and other collaborators contribute without depending on one person or institution.</p></div>
+      <div class="developer-grid"><article class="dev-card"><span class="card-number">01 / CO-DESIGN</span><h3>Interface & experience</h3><p>Improve navigation, visual design, mobile layouts, and accessibility. Discuss changes before introducing a new feature.</p></article><article class="dev-card"><span class="card-number">02 / CONTRIBUTE</span><h3>Data & collections</h3><p>Maintain structured resource files and group collections. Keep content separate from layout so subject experts do not need to edit the site code.</p></article><article class="dev-card"><span class="card-number">03 / MAINTAIN</span><h3>Testing & documentation</h3><p>Check contributions, fix problems, document decisions, and support student handovers. Use branches and pull requests for shared changes.</p></article></div>
+      <div class="dev-actions"><a class="btn secondary" id="repositoryLink" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener noreferrer">Shared repository not connected</a><a class="text-link" href="#developerGuide" id="openDeveloperGuide">Read the collaboration guide ↓</a></div>
+      <p class="small" id="repoSetupNote" style="color:#c5d6df;margin-top:18px">This package is prepared for shared development. No public repository, contributor permissions, or institutional endorsement has been created by this prototype.</p>
+      <details class="dev-guide section-anchor" id="developerGuide"><summary>Developer handoff & shared maintenance</summary><div class="guide-grid"><div><h3>One source of truth</h3><p>The ZIP contains editable source files, JSON data, validation and build scripts, contribution templates, and GitHub workflows. Build the portable HTML from those files rather than editing generated copies.</p><pre>src/                 HTML template, CSS, JavaScript
+data/collections/    One file per collection
+data/resources/      One file per resource
+scripts/             Validate, import, and build
+docs/                Setup and maintenance guides
+.github/             Issues, checks, deployment</pre><p>Local build, with Python 3.10 or newer:</p><pre>python scripts/validate.py
+python scripts/build.py
+python -m http.server 8000</pre></div><div><h3>Contribute from any university</h3><p>Use a shared organization-owned repository. Contributors can fork it, make changes on a branch, and propose a pull request. Assigned maintainers can then merge changes and publish a new version.</p><p>Committee editors maintain content; student developers maintain code and documentation. Keep at least two maintainers and document handovers so access does not end with one student's appointment.</p><h3 style="margin-top:25px">Connect the public workflow</h3><p>Set <code>githubRepository</code> in <code>data/config.json</code> to the real owner/repository, enable Issues, and configure GitHub Pages. Rebuild the HTML. The repository and submission links will then use that location.</p><p>Repository permissions and branch rules must be configured by an administrator. The included CODEOWNERS example does not grant access. Select and approve a code license before describing the project as open source.</p><p class="small">The local form is not a content management system. Authenticated, non-GitHub publishing would require a separately configured service.</p></div></div></details>
+    </div>
+  </section>
+  <section class="section section-anchor" id="about" aria-labelledby="aboutHeading"><div class="container"><div class="section-heading"><div><div class="eyebrow">About this direction</div><h2 id="aboutHeading">A shared hub, not a single-topic site.</h2></div></div><div class="about-grid"><article><div class="small-caps">Inclusive scope</div><h3>Planning and allied fields</h3><p>The hub brings together education, research, and practice across planning, policy, geography, design, environment, public health, and technology. AI is welcome but never required.</p></article><article><div class="small-caps">Distributed contribution</div><h3>Groups keep their identity</h3><p>Collections make committee and institutional contributions visible within a common library. Shared metadata supports discovery without forcing every group into an AI-centered structure.</p></article><article><div class="small-caps">Shared stewardship</div><h3>Continuity beyond one team</h3><p>Documented source files and contribution pathways support collaboration across universities. Platform ownership, publishing access, and maintenance responsibilities still need to be assigned.</p></article></div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-inner"><div><strong data-site-title>Planning Knowledge Hub</strong><br>Working title · Collaborative prototype · <span id="year"></span></div><div class="footer-links"><a href="#explore">Explore</a><a href="#contribute">Contribute</a><a href="#developers">Developers</a><a href="#about">About</a></div></div><details class="privacy-note"><summary>Prototype status, local storage & attribution</summary><p>No official organizational name, committee assignment, or affiliation is asserted by this prototype. The published catalog starts empty, as in the original HTML. Example entries are fictional and are excluded from published counts. Drafts remain on this device unless you explicitly export or share them. Local storage is not encrypted and should not contain confidential information. External resource links and GitHub submissions take you to third-party websites. Source material retains its original reuse conditions.</p><p>Source package version <span id="version"></span>. Technical setup references and limitations are documented in <code>docs/</code>.</p></details></div></footer>
+<script id="hub-data" type="application/json">/*__DATA__*/</script>
+<script>/*__APP__*/</script>
+</body>
+</html>

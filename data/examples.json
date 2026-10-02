@@ -1,0 +1,163 @@
+[
+  {
+    "id": "example-housing-studio",
+    "title": "Housing and community development studio syllabus",
+    "description": "This illustrative entry shows how a housing studio could share its course structure, community partnership approach, assignments, and assessment criteria. It demonstrates a non-AI education resource that connects planning with public policy and community development. The title, description, and metadata are examples only; no actual course, institution, or downloadable syllabus is represented.",
+    "url": "",
+    "domain": "Education",
+    "resourceType": "Course / Syllabus",
+    "fields": [
+      "planning",
+      "policy"
+    ],
+    "topics": [
+      "track-2"
+    ],
+    "collectionIds": [
+      "community-and-housing"
+    ],
+    "method": "Community Engagement",
+    "keywords": [],
+    "institution": "",
+    "contributor": "",
+    "date": "",
+    "geography": "",
+    "license": "Illustrative display only. Not an actual resource.",
+    "audience": "",
+    "isExample": true
+  },
+  {
+    "id": "example-climate-methods",
+    "title": "Neighborhood climate adaptation research framework",
+    "description": "This illustrative entry demonstrates a research resource linking environmental planning, climate adaptation, and neighborhood-scale analysis. A real record could explain the research question, data requirements, methods, limitations, and intended audience before linking to a paper or project page. This sample does not describe an actual study or make any claim about results, authors, or institutions.",
+    "url": "",
+    "domain": "Research",
+    "resourceType": "Research Project",
+    "fields": [
+      "environment",
+      "planning"
+    ],
+    "topics": [
+      "track-3"
+    ],
+    "collectionIds": [
+      "environment-and-climate"
+    ],
+    "method": "GIS / Spatial Analysis",
+    "keywords": [],
+    "institution": "",
+    "contributor": "",
+    "date": "",
+    "geography": "",
+    "license": "Illustrative display only. Not an actual resource.",
+    "audience": "",
+    "isExample": true
+  },
+  {
+    "id": "example-engagement-guide",
+    "title": "Inclusive community engagement field guide",
+    "description": "This illustrative entry shows how a practical guide could document accessible meeting formats, participant outreach, facilitation methods, and feedback reporting. It demonstrates that community-centered and qualitative resources belong in the hub alongside technical tools. The record is a fictional display example, not an endorsed guide, an official committee publication, or advice for a particular planning process.",
+    "url": "",
+    "domain": "Practice",
+    "resourceType": "Policy / Guidance",
+    "fields": [
+      "health",
+      "planning"
+    ],
+    "topics": [
+      "track-4",
+      "track-2"
+    ],
+    "collectionIds": [
+      "community-and-housing"
+    ],
+    "method": "Community Engagement",
+    "keywords": [],
+    "institution": "",
+    "contributor": "",
+    "date": "",
+    "geography": "",
+    "license": "Illustrative display only. Not an actual resource.",
+    "audience": "",
+    "isExample": true
+  },
+  {
+    "id": "example-responsible-ai",
+    "title": "Teaching module on responsible AI in planning",
+    "description": "This illustrative entry shows how the original AI repository fits within a broader knowledge hub. A real teaching module could provide learning objectives, classroom activities, and discussion questions about using AI responsibly in planning. Here, AI is an optional method and a specific planning topic, not a requirement for every resource. No actual teaching materials are linked.",
+    "url": "",
+    "domain": "Education",
+    "resourceType": "Teaching Material",
+    "fields": [
+      "computing",
+      "planning"
+    ],
+    "topics": [
+      "track-1"
+    ],
+    "collectionIds": [
+      "ai-in-planning",
+      "planning-education"
+    ],
+    "method": "Generative AI / LLMs",
+    "keywords": [],
+    "institution": "",
+    "contributor": "",
+    "date": "",
+    "geography": "",
+    "license": "Illustrative display only. Not an actual resource.",
+    "audience": "",
+    "isExample": true
+  },
+  {
+    "id": "example-spatial-access",
+    "title": "Reproducible spatial accessibility notebook",
+    "description": "This illustrative entry represents the structure of a research notebook record connecting geography, transportation, and planning methods. A real contribution could describe its input data, analytical steps, software requirements, and reproducibility limits, with a link to the source repository. This is a fictional metadata example only and does not provide executable code, observed data, or validated accessibility findings.",
+    "url": "",
+    "domain": "Research",
+    "resourceType": "Code / Notebook",
+    "fields": [
+      "geography",
+      "computing"
+    ],
+    "topics": [
+      "track-10",
+      "track-11"
+    ],
+    "collectionIds": [],
+    "method": "GIS / Spatial Analysis",
+    "keywords": [],
+    "institution": "",
+    "contributor": "",
+    "date": "",
+    "geography": "",
+    "license": "Illustrative display only. Not an actual resource.",
+    "audience": "",
+    "isExample": true
+  },
+  {
+    "id": "example-public-space",
+    "title": "Public space design and observation toolkit",
+    "description": "This illustrative entry demonstrates how a design-oriented practice resource could be shared across architecture, urban design, and planning. A real toolkit could include observation templates, documentation methods, and instructions for interpreting public space use. This fictional record is provided only to test the catalog and filters; it does not identify an actual toolkit or recommend a design intervention.",
+    "url": "",
+    "domain": "Practice",
+    "resourceType": "Tool",
+    "fields": [
+      "design",
+      "planning"
+    ],
+    "topics": [
+      "track-12"
+    ],
+    "collectionIds": [],
+    "method": "Design Methods",
+    "keywords": [],
+    "institution": "",
+    "contributor": "",
+    "date": "",
+    "geography": "",
+    "license": "Illustrative display only. Not an actual resource.",
+    "audience": "",
+    "isExample": true
+  }
+]

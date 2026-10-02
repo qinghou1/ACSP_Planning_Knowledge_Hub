@@ -1,0 +1,9 @@
+{
+  "siteTitle": "Planning Knowledge Hub",
+  "tagline": "A shared resource hub for planning and allied fields.",
+  "githubRepository": "",
+  "githubBranch": "main",
+  "version": "2.0.0",
+  "status": "Working prototype",
+  "storageNamespace": "planning-knowledge-hub-v2"
+}

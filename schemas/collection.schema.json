@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Collection record",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "description",
+    "fields",
+    "organizerType"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,99}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 140
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2200,
+      "description": "50–100 whitespace-delimited words for resources; 20–100 for collections. Enforced by scripts/validate.py."
+    },
+    "fields": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 24,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "planning",
+          "policy",
+          "geography",
+          "design",
+          "environment",
+          "health",
+          "computing",
+          "interdisciplinary"
+        ]
+      }
+    },
+    "topics": {
+      "type": "array",
+      "maxItems": 24,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "track-1",
+          "track-2",
+          "track-3",
+          "track-4",
+          "track-5",
+          "track-6",
+          "track-7",
+          "track-8",
+          "track-9",
+          "track-10",
+          "track-11",
+          "track-12"
+        ]
+      }
+    },
+    "institution": {
+      "type": "string",
+      "maxLength": 250
+    },
+    "organizerType": {
+      "enum": [
+        "Committee",
+        "Task Force",
+        "Research Group",
+        "University / Program",
+        "Cross-University Collaboration",
+        "Community / Practice Organization",
+        "Other"
+      ]
+    },
+    "organizer": {
+      "type": "string",
+      "maxLength": 180
+    },
+    "status": {
+      "enum": [
+        "starter",
+        "proposed",
+        "active"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

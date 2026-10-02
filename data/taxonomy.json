@@ -1,0 +1,30 @@
+{
+  "domains": ["Education", "Research", "Practice"],
+  "resourceTypes": ["Course / Syllabus", "Teaching Material", "Publication", "Research Project", "Dataset", "Code / Notebook", "Tool", "Workflow", "Use Case", "Policy / Guidance", "Report", "Event / Recording", "Other"],
+  "fields": [
+    {"id":"planning","label":"Planning & Urban Studies"},
+    {"id":"policy","label":"Public Policy & Governance"},
+    {"id":"geography","label":"Geography & GIS"},
+    {"id":"design","label":"Design & Built Environment"},
+    {"id":"environment","label":"Environment & Sustainability"},
+    {"id":"health","label":"Public Health & Community Development"},
+    {"id":"computing","label":"Data Science & Technology"},
+    {"id":"interdisciplinary","label":"Other / Interdisciplinary"}
+  ],
+  "topics": [
+    {"id":"track-1","label":"Track 1: AI in Planning"},
+    {"id":"track-2","label":"Track 2: Community Development and Housing"},
+    {"id":"track-3","label":"Track 3: Environmental Planning"},
+    {"id":"track-4","label":"Track 4: Inclusion, Anti-racism and Accessibility in Planning"},
+    {"id":"track-5","label":"Track 5: International Development Planning"},
+    {"id":"track-6","label":"Track 6: Land Use Policy, Governance and Law"},
+    {"id":"track-7","label":"Track 7: Food Systems and Community Health"},
+    {"id":"track-8","label":"Track 8: Planning History, Theory and Education"},
+    {"id":"track-9","label":"Track 9: Regional Planning & Economic Development"},
+    {"id":"track-10","label":"Track 10: Quantitative and Spatial Methods"},
+    {"id":"track-11","label":"Track 11: Transportation & Infrastructure Planning"},
+    {"id":"track-12","label":"Track 12: Placemaking and Urban Design"}
+  ],
+  "methods": ["Qualitative Research", "Community Engagement", "Policy Analysis", "GIS / Spatial Analysis", "Statistical Analysis", "Design Methods", "Generative AI / LLMs", "Machine Learning", "NLP", "Computer Vision", "GeoAI", "Predictive Analytics", "Agents"],
+  "organizerTypes": ["Committee", "Task Force", "Research Group", "University / Program", "Cross-University Collaboration", "Community / Practice Organization", "Other"]
+}

@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A shared resource hub for planning and allied fields, with committee collections and cross-university collaboration.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Planning Knowledge Hub</title>
+  <style>/* Shared visual system. Preserve the original repository's navy / teal identity. */
+:root{--navy:#17324d;--navy2:#244864;--blue:#2f6f92;--teal:#356e69;--ink:#253442;--muted:#586b79;--line:#dbe4e8;--soft:#f5f8f8;--softblue:#edf4f8;--mint:#eaf3ef;--paper:#fbfcfa;--white:#fff;--radius:14px;--max:1180px;--shadow:0 12px 34px rgba(23,50,77,.06)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}button,input,select,textarea{font:inherit}a{color:var(--blue)}a:hover{color:var(--navy)}button{cursor:pointer}a,button{touch-action:manipulation}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #248385;outline-offset:4px}a[target="_blank"]:not(.btn)::after{content:" ↗"}h1,h2,h3{color:var(--navy);line-height:1.16;letter-spacing:-.025em}h1{font-size:clamp(2.7rem,5.3vw,4.7rem);margin:14px 0 22px;font-weight:750;max-width:760px}h2{font-size:clamp(1.9rem,3.4vw,2.75rem);margin:8px 0 14px;font-weight:720}h3{font-size:1.2rem;margin:0 0 10px}p{margin:0 0 16px}p:last-child{margin-bottom:0}code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.88em}code{overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--soft);padding:20px;border-radius:10px;border:1px solid var(--line)}[hidden]{display:none!important}.container{width:min(calc(100% - 48px),var(--max));margin-inline:auto}.skip-link{position:absolute;top:-70px;left:20px;z-index:110;background:var(--navy);color:white;padding:12px 16px}.skip-link:focus{top:8px}.eyebrow,.small-caps{font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}.lede{font-size:1.15rem;line-height:1.75;color:var(--muted);max-width:720px}.muted{color:var(--muted)}.small{font-size:.85rem}.section-anchor{scroll-margin-top:100px}.section{padding:72px 0}.section.soft{background:var(--soft);border-block:1px solid var(--line)}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:28px}.section-heading h2{margin-bottom:0}.section-heading p{color:var(--muted);max-width:440px;margin:0}.section-heading .btn{flex-shrink:0}.topline{background:var(--navy);color:#e6edf1;font-size:.72rem;letter-spacing:.02em}.topline .container{min-height:32px;display:flex;justify-content:space-between;align-items:center;gap:16px}.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#b6d7c5;margin-right:7px}.site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.98);border-bottom:1px solid var(--line)}.header-inner{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);font-size:1.02rem;line-height:1.25;font-weight:780;letter-spacing:-.02em}.brand-mark{background:var(--navy);color:#fff;width:39px;height:39px;border-radius:11px;display:grid;place-items:center;font-size:.81rem;letter-spacing:-.03em;flex-shrink:0}.brand-sub{display:block;font-size:.65rem;font-weight:550;letter-spacing:.04em;color:var(--muted);margin-top:4px}nav ul{margin:0;padding:0;list-style:none;display:flex;align-items:center;gap:3px}nav a{font-size:.84rem;font-weight:650;text-decoration:none;display:block;padding:10px 11px;border-radius:8px;color:#435865}nav a:hover{background:var(--softblue)}.nav-contribute{border:1px solid var(--line)}.nav-toggle{display:none;background:white;border:1px solid var(--line);border-radius:8px;padding:9px 13px;color:var(--navy)}.hero{padding:72px 0 58px;background:linear-gradient(115deg,var(--paper),#fff);border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:70px;align-items:center}.hero .lede{font-size:1.12rem;max-width:640px;margin-bottom:26px}.button-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 17px;border:1px solid var(--navy);border-radius:9px;background:var(--navy);color:white;text-decoration:none;font-weight:700;font-size:.88rem;min-height:44px;line-height:1.35}.btn:hover{background:var(--navy2);color:white}.btn.secondary{background:white;color:var(--navy)}.btn.secondary:hover{background:var(--softblue)}.btn.compact{font-size:.81rem;padding:9px 12px;min-height:40px}.btn:disabled,.btn[aria-disabled="true"]{background:#edf0f1;color:#687582;border-color:#d8e0e3;cursor:not-allowed}.link-button{background:transparent;border:0;color:var(--blue);padding:6px 0;text-decoration:underline;text-underline-offset:3px;font-size:.87rem;font-weight:650}.hero-caption{font-size:.8rem;color:var(--muted);margin-top:18px}.hero-aside{padding:28px 30px;border:1px solid #ccdcd8;border-radius:18px;background:#f1f6f3;box-shadow:var(--shadow)}.hero-aside h2{font-size:1.48rem;line-height:1.4;margin:10px 0 18px}.principle-row{display:flex;gap:14px;align-items:flex-start;padding:17px 0;border-top:1px solid #d6e2dd}.principle-row:last-child{padding-bottom:0}.principle-num{font-size:.75rem;color:var(--teal);font-weight:800;padding-top:3px}.principle-row strong{display:block;color:var(--navy);font-size:.95rem}.principle-row p{font-size:.83rem;color:var(--muted);margin:3px 0 0;line-height:1.65}.hero-bottom{display:flex;flex-wrap:wrap;gap:12px 36px;border-top:1px solid var(--line);margin-top:40px;padding-top:22px;color:var(--muted);font-size:.83rem}.hero-bottom strong{color:var(--navy);margin-right:7px}.domain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:25px;background:white;border:1px solid var(--line);border-radius:var(--radius)}.domain-card{display:flex;flex-direction:column;gap:20px;transition:border-color .15s}.domain-card:hover{border-color:#7eaaa2}.card-number{font-size:.73rem;color:var(--teal);font-weight:750;letter-spacing:.1em}.domain-card h3{font-size:1.35rem;margin:10px 0}.domain-card p{font-size:.91rem;color:var(--muted);line-height:1.7}.text-link{font-size:.86rem;font-weight:750;text-decoration:none;color:var(--blue)}.domain-card .text-link{margin-top:auto}.section-intro{color:var(--muted);max-width:800px;margin:18px 0 26px}.view-bar{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:18px}.segmented{display:flex;flex-wrap:wrap;gap:4px;padding:4px;border:1px solid var(--line);border-radius:10px;background:white}.segmented button{background:transparent;border:0;border-radius:7px;padding:10px 14px;color:#4c6270;font-size:.84rem;font-weight:650}.segmented button[aria-pressed="true"],.segmented button[aria-selected="true"]{background:var(--navy);color:white}.view-note{font-size:.82rem;color:var(--muted)}.filters{background:white;padding:24px;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.search-row{display:grid;grid-template-columns:1fr 175px;gap:16px;align-items:end;margin-bottom:18px}.field label,.field-label{display:block;font-size:.8rem;font-weight:750;color:var(--navy);margin-bottom:6px}input,select,textarea{width:100%;padding:11px 12px;border:1px solid #bfced5;border-radius:8px;background:white;color:var(--ink);font-size:.9rem;min-width:0}select{text-overflow:ellipsis}input::placeholder,textarea::placeholder{color:#6f808c}textarea{resize:vertical;line-height:1.6}input[type="checkbox"]{width:17px;height:17px;margin:3px 0 0;accent-color:var(--teal);flex-shrink:0}input[type="file"]{padding:9px;max-width:100%}.filter-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.help{font-size:.76rem;line-height:1.6;color:var(--muted);margin-top:5px}.advanced{margin-top:18px}.advanced summary,details summary{cursor:pointer;font-size:.85rem;font-weight:700;color:var(--navy);padding:8px 0}.advanced .filter-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:8px}.result-toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:20px 0}.result-count{font-size:.86rem;color:var(--muted)}.notice{padding:15px 18px;border-radius:9px;background:var(--softblue);border-left:3px solid var(--blue);font-size:.84rem;color:#3d586b;line-height:1.7}.notice.warning{background:#faf5e9;border-left-color:#a4823c;color:#625334}.empty-state{padding:42px 26px;border:1px dashed #adbec7;border-radius:var(--radius);text-align:center;background:white}.empty-state .empty-symbol{width:44px;height:44px;border:1px solid #c6d9d3;border-radius:12px;background:var(--mint);display:grid;place-items:center;color:var(--teal);margin:0 auto 16px;font-size:1.2rem}.empty-state h3{font-size:1.25rem}.empty-state p{max-width:620px;color:var(--muted);margin:0 auto 19px;font-size:.9rem}.empty-state .button-row{justify-content:center}.resource-list{display:grid;gap:14px}.resource-item{border:1px solid var(--line);border-radius:12px;padding:24px;background:white}.resource-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px}.resource-type{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--teal)}.badge{display:inline-flex;align-items:center;font-size:.67rem;font-weight:750;padding:4px 8px;border-radius:5px;background:var(--softblue);color:#355a6f;letter-spacing:.015em}.badge.draft{background:#faf1db;color:#705619}.resource-title{font-size:1.17rem;line-height:1.4;font-weight:760;text-underline-offset:4px;color:var(--navy)}.resource-item h3{margin:0}.resource-description{margin:12px 0 15px;max-width:980px;color:#4c606e;font-size:.9rem;line-height:1.8}.resource-meta{display:flex;flex-wrap:wrap;gap:7px 18px;color:var(--muted);font-size:.77rem}.resource-meta span{overflow-wrap:anywhere}.resource-item details{margin-top:10px;border-top:1px solid var(--line);padding-top:5px}.resource-item details p{font-size:.82rem;color:var(--muted);margin:5px 0}.resource-actions{margin-top:12px}.collection-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.collection-card{display:flex;flex-direction:column}.collection-header{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:14px}.collection-initial{width:37px;height:37px;background:var(--mint);color:var(--teal);border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:.76rem}.collection-card h3{font-size:1.24rem}.collection-card p{color:var(--muted);font-size:.87rem;line-height:1.75}.collection-meta{font-size:.76rem;color:var(--muted);margin:18px 0}.collection-footer{display:flex;justify-content:space-between;align-items:center;gap:15px;padding-top:17px;border-top:1px solid var(--line);margin-top:auto;font-size:.78rem;color:var(--muted)}.form-layout{display:grid;grid-template-columns:1.5fr .7fr;gap:30px;align-items:start;margin-top:24px}.form-card{padding:28px;background:white;border:1px solid var(--line);border-radius:var(--radius)}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}.field.full,.full{grid-column:1/-1}.form-subheading{border-top:1px solid var(--line);padding-top:23px;margin-top:4px}.form-subheading h3{font-size:1rem;margin-bottom:4px}.form-subheading p{font-size:.8rem;color:var(--muted)}fieldset{border:0;padding:0;margin:0;min-width:0}legend{font-size:.8rem;font-weight:750;color:var(--navy);margin-bottom:8px;padding:0}.check-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px}.check-option{display:flex;align-items:flex-start;gap:9px;font-size:.81rem;color:#435a68;cursor:pointer;line-height:1.5}.check-option input{width:16px;height:16px;margin:3px 0 0}.check-line{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:.81rem;line-height:1.65}.form-aside{display:grid;gap:18px}.step{display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-top:1px solid var(--line)}.step:first-of-type{margin-top:17px}.step-number{width:25px;height:25px;background:var(--mint);color:var(--teal);border-radius:50%;display:grid;place-items:center;font-size:.74rem;font-weight:800;flex-shrink:0}.step strong{display:block;font-size:.87rem;color:var(--navy)}.step p{font-size:.8rem;color:var(--muted);margin:4px 0 0}.status-message{margin-top:18px;padding:14px 16px;background:var(--softblue);border-radius:9px;color:var(--navy);font-size:.86rem;overflow-wrap:anywhere}.status-message.error{background:#fbeee8;color:#863a23}.preview-panel{margin-top:25px;padding-top:24px;border-top:1px solid var(--line)}.preview-panel>h3{font-size:1.03rem}.preview-panel textarea{font-family:ui-monospace,Consolas,monospace;font-size:.75rem;background:var(--soft)}.drafts-list{display:grid;gap:12px;margin-top:20px}.draft-item{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:16px;border:1px solid var(--line);border-radius:10px;background:white}.draft-item strong{display:block;color:var(--navy);font-size:.92rem}.draft-item small{font-size:.77rem;color:var(--muted)}.draft-actions{display:flex;gap:12px;flex-wrap:wrap}.draft-actions button{font-size:.78rem}.import-box{background:var(--soft);border:1px dashed #b6c7cf;border-radius:10px;padding:18px;margin-top:20px}.import-box label{font-size:.85rem;font-weight:700;display:block;margin-bottom:8px}.dev-section{background:var(--navy);color:#d6e2e9}.dev-section h2,.dev-section h3{color:#fff}.dev-section .eyebrow{color:#bbd9ce}.dev-section .section-heading p{color:#c5d6df}.dev-section .section-intro{color:#c5d6df}.developer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0}.dev-card{border:1px solid #436075;background:#1d3b54;border-radius:12px;padding:24px}.dev-card h3{font-size:1.1rem}.dev-card p{font-size:.86rem;line-height:1.8;color:#c7d8e1}.dev-card .card-number{color:#b7d9cd;display:block;margin-bottom:15px}.dev-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.dev-section .btn.secondary{background:#fff}.dev-section .text-link{color:#e3f3eb}.dev-guide{margin-top:28px;border-top:1px solid #436075;padding-top:14px}.dev-guide summary{color:#fff;font-size:.96rem;padding:10px 0}.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:18px}.guide-grid p{font-size:.85rem;color:#c7d8e1}.guide-grid pre{background:#112a40;border:1px solid #436075;color:#dcebe5;font-size:.8rem}.guide-grid a{color:#d4eadf}.about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}.about-grid h3{font-size:1.15rem}.about-grid p{font-size:.9rem;color:var(--muted);line-height:1.8}.about-grid .small-caps{margin-bottom:16px}.site-footer{padding:30px 0;background:var(--soft);border-top:1px solid var(--line);color:var(--muted);font-size:.79rem}.footer-inner{display:flex;justify-content:space-between;gap:24px;align-items:center}.footer-links{display:flex;gap:18px}.footer-links a{color:var(--muted);text-decoration:none}.privacy-note{border-top:1px solid var(--line);margin-top:25px;padding-top:14px}.privacy-note p{max-width:1000px;font-size:.8rem}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.pill-note{margin-top:16px;display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.8rem}.separator{height:1px;background:var(--line);margin:18px 0}
+@media(min-width:1440px){.hero{padding-top:86px}}
+@media(max-width:1050px){.hero-grid{gap:35px;grid-template-columns:1.15fr .9fr}nav a{padding:9px 8px;font-size:.78rem}.brand{font-size:.95rem}.form-layout{grid-template-columns:1.3fr .7fr}.form-card{padding:23px}.form-grid{gap:16px}.filter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.check-grid{grid-template-columns:1fr}}
+@media(max-width:850px){.hero-grid,.form-layout{grid-template-columns:1fr}.hero-grid{gap:30px}.hero-aside{max-width:none}.hero-aside h2{max-width:none}.hero-aside{display:block}.principle-row{padding:12px 0}.hero h1{max-width:660px}.form-aside{grid-template-columns:1fr 1fr}.section-heading{align-items:flex-start;flex-direction:column;gap:16px}.section-heading p{max-width:700px}.nav-toggle{display:block}nav{display:none;position:absolute;left:0;right:0;top:80px;background:white;border-bottom:1px solid var(--line);padding:12px 24px}nav.open{display:block}nav ul{flex-direction:column;align-items:stretch}nav a{font-size:.9rem;padding:12px}.developer-grid{gap:14px}.dev-card{padding:20px}.domain-grid{gap:14px}.domain-card{padding:20px}}
+@media(max-width:600px){.container{width:calc(100% - 32px)}.topline .container{min-height:30px;justify-content:center}.topline .scope-line{display:none}.topline{font-size:.66rem}.header-inner{min-height:74px}.brand{font-size:.87rem}.brand-sub{font-size:.61rem}.brand-mark{width:34px;height:34px}nav{top:74px}.hero{padding:44px 0 34px}.hero h1{font-size:2.9rem;line-height:1.1}.hero .lede{font-size:1rem}.hero-grid{gap:30px}.hero-aside{padding:22px}.hero-bottom{gap:9px 20px;margin-top:28px}.section{padding:48px 0}.domain-grid,.developer-grid,.collection-grid,.about-grid,.form-aside,.guide-grid{grid-template-columns:1fr}.domain-card{gap:15px}.search-row,.filter-grid,.advanced .filter-grid{grid-template-columns:1fr}.search-row{gap:13px}.filters{padding:18px}.filter-grid{gap:13px}.form-grid{grid-template-columns:1fr}.full,.field.full{grid-column:auto}.form-card{padding:20px}.check-grid{grid-template-columns:1fr}.segmented{width:100%;justify-content:space-between}.segmented button{font-size:.76rem;padding:9px 9px}.section-intro{font-size:.9rem}.result-toolbar{gap:10px}.resource-item{padding:20px}.resource-title{font-size:1.08rem}.resource-top{align-items:flex-start}.empty-state{padding:30px 20px}.collection-footer{align-items:flex-start}.draft-item{align-items:flex-start;flex-direction:column;gap:8px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}.section-anchor{scroll-margin-top:88px}.button-row .btn{flex-grow:1}.about-grid{gap:28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+@media print{.topline,.site-header,.button-row,.form-layout,.dev-actions,.site-footer{display:none}.section{padding:25px 0}.hero{padding:15px 0}.dev-section{background:white;color:black}.dev-section h2,.dev-section h3,.dev-section p{color:black}.dev-card{background:white}.resource-item,.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="topline"><div class="container"><span class="scope-line">Planning and allied fields · Education, research, and practice</span><span><span class="status-dot" aria-hidden="true"></span><span id="connectionLabel">Working prototype · Shared publishing not connected</span></span></div></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="Planning Knowledge Hub home"><span class="brand-mark" aria-hidden="true">PK</span><span><span data-site-title>Planning Knowledge Hub</span><span class="brand-sub">Many fields. Shared knowledge.</span></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button>
+    <nav id="site-navigation" aria-label="Primary navigation"><ul>
+      <li><a href="#home">Home</a></li><li><a href="#explore">Explore</a></li><li><a href="#collections">Collections</a></li><li><a class="nav-contribute" href="#contribute">Contribute</a></li><li><a href="#developers">Developers</a></li><li><a href="#about">About</a></li>
+    </ul></nav>
+  </div>
+</header>
+<main id="main">
+  <noscript><div class="container notice warning">JavaScript is required for search, filters, and local contribution tools. This page sends no submissions without an explicit handoff. The source package includes editable JSON resource files.</div></noscript>
+  <section class="hero section-anchor" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Education · Research · Practice</div>
+          <h1 data-site-title>Planning Knowledge Hub</h1>
+          <p class="lede">A shared resource hub for planning and allied fields. Discover teaching materials, research, methods, and practical knowledge contributed by committees, universities, and the wider community.</p>
+          <div class="button-row"><a class="btn" href="#explore">Explore resources <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#contribute">Contribute a resource</a></div>
+          <p class="hero-caption">AI in Planning remains a collection, not a boundary.</p>
+        </div>
+        <aside class="hero-aside" aria-label="An inclusive and collaborative platform">
+          <div class="small-caps">One platform. Many contributors.</div>
+          <h2>Shared by the community.<br>Built together.</h2>
+          <div class="principle-row"><span class="principle-num">01</span><div><strong>Across fields</strong><p>Resources do not need an AI focus to belong here.</p></div></div>
+          <div class="principle-row"><span class="principle-num">02</span><div><strong>Across committees</strong><p>Groups can organize collections and prepare their own contributions.</p></div></div>
+          <div class="principle-row"><span class="principle-num">03</span><div><strong>Across universities</strong><p>Students and developers can co-design the site and share maintenance.</p></div></div>
+        </aside>
+      </div>
+      <div class="hero-bottom"><span><strong>3</strong> resource domains</span><span><strong>12</strong> planning tracks</span><span><strong>Open to</strong> allied fields and new collections</span></div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="domainsHeading">
+    <div class="container">
+      <div class="section-heading"><div><div class="eyebrow">Explore by domain</div><h2 id="domainsHeading">Knowledge for every part of planning.</h2></div></div>
+      <div class="domain-grid">
+        <article class="card domain-card"><div><span class="card-number">01 / EDUCATION</span><h3>Teaching & learning</h3><p>Courses, syllabi, assignments, tutorials, and teaching approaches across planning and related disciplines.</p></div><a class="text-link" href="#education" data-domain="Education">Browse education <span aria-hidden="true">→</span></a></article>
+        <article class="card domain-card"><div><span class="card-number">02 / RESEARCH</span><h3>Methods & evidence</h3><p>Projects, publications, datasets, code, and methods connecting planning questions with other fields.</p></div><a class="text-link" href="#research" data-domain="Research">Browse research <span aria-hidden="true">→</span></a></article>
+        <article class="card domain-card"><div><span class="card-number">03 / PRACTICE</span><h3>Applications & guidance</h3><p>Case studies, policy guidance, community tools, and lessons from planning and public-sector practice.</p></div><a class="text-link" href="#practice" data-domain="Practice">Browse practice <span aria-hidden="true">→</span></a></article>
+      </div>
+    </div>
+  </section>
+  <section class="section soft section-anchor" id="explore" aria-labelledby="exploreHeading">
+    <div class="container">
+      <div class="section-heading"><div><div class="eyebrow">Search the shared library</div><h2 id="exploreHeading">Find what you need.</h2></div><p>Browse across domains, fields, planning tracks, and collections. Published resource titles open the original source in a new tab.</p></div>
+      <div class="view-bar"><div class="segmented" role="group" aria-label="Catalog view"><button type="button" data-view="published" aria-pressed="true">Published <span id="publishedCount">0</span></button><button type="button" data-view="examples" aria-pressed="false">Example entries</button><button type="button" data-view="drafts" aria-pressed="false">My drafts <span id="draftCount">0</span></button></div><span class="view-note" id="catalogNote">The public catalog is ready for its first resources.</span></div>
+      <div id="exampleNotice" class="notice warning" hidden style="margin-bottom:18px">These are fictional display examples, not published resources or committee endorsements. Example titles have no external resource link.</div>
+      <div id="draftNotice" class="notice warning" hidden style="margin-bottom:18px">Only drafts saved in this browser appear here. They are not published, synchronized, or shared with other contributors.</div>
+      <div class="filters" aria-label="Resource filters">
+        <div class="search-row"><div class="field"><label for="search">Search resources</label><input id="search" type="search" placeholder="Title, description, field, institution, or keyword" autocomplete="off"></div><div class="field"><label for="sort">Sort by</label><select id="sort"><option value="title">Title A–Z</option><option value="domain">Domain</option></select></div></div>
+        <div class="filter-grid">
+          <div class="field"><label for="domain">Domain</label><select id="domain"><option value="">All domains</option></select></div>
+          <div class="field"><label for="fieldFilter">Field / discipline</label><select id="fieldFilter"><option value="">All fields</option></select></div>
+          <div class="field"><label for="planningTopic">Planning topic</label><select id="planningTopic"><option value="">All planning tracks</option></select></div>
+          <div class="field"><label for="collectionFilter">Collection / group</label><select id="collectionFilter"><option value="">All collections</option></select></div>
+        </div>
+        <details class="advanced"><summary>More filters: resource type and method</summary><div class="filter-grid"><div class="field"><label for="resourceType">Resource type</label><select id="resourceType"><option value="">All types</option></select></div><div class="field"><label for="methodFilter">Method / tool</label><select id="methodFilter"><option value="">All methods, including non-AI</option></select></div></div></details>
+      </div>
+      <div class="result-toolbar"><span id="resultCount" class="result-count" role="status" aria-live="polite"></span><button id="clearFilters" class="link-button" type="button">Clear filters</button></div>
+      <div class="resource-list" id="resourceList"></div>
+    </div>
+  </section>
+  <section class="section section-anchor" id="collections" aria-labelledby="collectionsHeading">
+    <div class="container">
+      <div class="section-heading"><div><div class="eyebrow">Committees, groups & universities</div><h2 id="collectionsHeading">A place for every contribution.</h2></div><a class="btn secondary" href="#contribute" data-open-tab="collection">Propose a collection</a></div>
+      <p class="section-intro">Collections give groups their own space within one searchable library. A resource can appear in more than one collection and connect multiple fields.</p>
+      <div class="notice" style="margin-bottom:24px">Starter collections below demonstrate the structure. They are not official committee assignments; organizers and published content have not yet been assigned. New groups are not limited to these examples.</div>
+      <div class="collection-grid" id="collectionGrid"></div>
+    </div>
+  </section>
+  <section class="section soft section-anchor" id="contribute" aria-labelledby="contributeHeading">
+    <div class="container">
+      <div class="section-heading"><div><div class="eyebrow">Contribute without editing the website</div><h2 id="contributeHeading">Share knowledge. Start a collection.</h2></div><p>Prepare a resource or collection through the form. Save a local draft, download a structured file, or continue to GitHub once the shared repository is connected.</p></div>
+      <div class="segmented" role="tablist" aria-label="Contribution type"><button id="tab-resource" role="tab" aria-selected="true" aria-controls="panel-resource" tabindex="0" data-tab="resource" type="button">Add / update a resource</button><button id="tab-collection" role="tab" aria-selected="false" aria-controls="panel-collection" tabindex="-1" data-tab="collection" type="button">Propose a collection</button><button id="tab-drafts" role="tab" aria-selected="false" aria-controls="panel-drafts" tabindex="-1" data-tab="drafts" type="button">Local drafts & import</button></div>
+      <div class="form-layout">
+        <div>
+          <div id="panel-resource" role="tabpanel" aria-labelledby="tab-resource" class="form-card">
+            <h3 id="resourceFormHeading">Prepare a resource</h3><p class="muted small">An asterisk (*) marks required fields. AI methods and planning tracks are optional.</p>
+            <form id="resourceForm">
+              <input type="hidden" id="recordId"><input type="hidden" id="recordAction" value="add">
+              <div class="form-grid">
+                <div class="field full"><label for="resourceTitle">Resource title *</label><input id="resourceTitle" required maxlength="160"></div>
+                <div class="field full"><label for="resourceUrl">Original resource URL *</label><input id="resourceUrl" type="url" required maxlength="1500" placeholder="https://"><div class="help">Use an http or https link to the original source. Do not enter private access tokens or sign-in links.</div></div>
+                <div class="field"><label for="formDomain">Domain *</label><select id="formDomain" required><option value="">Select a domain</option></select></div>
+                <div class="field"><label for="formType">Resource type *</label><select id="formType" required><option value="">Select a type</option></select></div>
+                <fieldset class="full"><legend>Field / discipline * <span class="muted small">(select one or more)</span></legend><div id="formFields" class="check-grid"></div><div class="help">Choose Other / Interdisciplinary when needed. Add specific fields as keywords below.</div></fieldset>
+                <div class="field full"><label for="resourceDescription">Short description * <span class="muted">(50–100 words)</span></label><textarea id="resourceDescription" rows="5" required maxlength="2200" aria-describedby="wordCount" placeholder="What is the resource, why is it useful, and who could use it?"></textarea><div id="wordCount" class="help">0 words · Target: 50–100 words</div></div>
+                <div class="full form-subheading"><h3>Help others find the resource</h3><p>Use only the categories that apply. Non-AI and interdisciplinary resources are welcome.</p></div>
+                <details class="full"><summary>Planning tracks <span class="muted">(optional, select any that apply)</span></summary><div id="formTopics" class="check-grid" style="margin-top:10px"></div></details>
+                <fieldset class="full"><legend>Collection / contributing group <span class="muted small">(optional)</span></legend><div id="formCollections" class="check-grid"></div><div class="help">Not part of a group? Leave this blank. To add a new group, use the collection form.</div></fieldset>
+                <div class="field"><label for="formMethod">Method / tool <span class="muted">(optional)</span></label><input id="formMethod" list="methodOptions" maxlength="120" placeholder="For example, community engagement"><datalist id="methodOptions"></datalist></div>
+                <div class="field"><label for="formKeywords">Other topics / keywords</label><input id="formKeywords" maxlength="350" placeholder="Separate keywords with commas"></div>
+                <div class="field"><label for="institution">Institution / organization</label><input id="institution" maxlength="180" placeholder="Public attribution, if appropriate"></div>
+                <div class="field"><label for="contributor">Contributor name</label><input id="contributor" maxlength="120" placeholder="Public display name (optional)"></div>
+                <div class="field"><label for="resourceDate">Date / version</label><input id="resourceDate" maxlength="60" placeholder="For example, 2026 or v1.0"></div>
+                <div class="field"><label for="geography">Geography / applicability</label><input id="geography" maxlength="140" placeholder="Location or general applicability"></div>
+                <div class="field full"><label for="audience">Intended audience</label><input id="audience" maxlength="180" placeholder="For example, students, faculty, practitioners, community groups"></div>
+                <div class="field full"><label for="license">Reuse / attribution notes</label><textarea id="license" rows="2" maxlength="700" placeholder="Describe known reuse conditions, or state that they are not specified."></textarea><div class="help">Linking to a resource does not grant permission to reproduce it. Do not upload third-party full text here.</div></div>
+                <label class="full check-line"><input id="resourceConsent" type="checkbox" required><span>I have checked that the information entered here is appropriate to share publicly. I have not included private contact details, credentials, or confidential material.</span></label>
+                <div class="full button-row"><button class="btn" type="submit">Preview & save locally</button><button class="link-button" id="resetResource" type="button">Clear form / start new</button></div>
+              </div>
+            </form>
+            <div id="resourceStatus" role="status" tabindex="-1" class="status-message" hidden></div>
+            <div id="resourcePreview" class="preview-panel" hidden><h3>Your contribution packet</h3><div id="resourcePreviewCard"></div><div class="button-row" style="margin-top:16px"><button class="btn secondary compact" type="button" id="downloadResource">Download JSON</button><button class="btn secondary compact" type="button" id="copyResource">Copy submission</button><a class="btn compact" id="resourceGitHub" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener noreferrer">Continue on GitHub</a></div><p class="help" id="resourceHandoffNote"></p><details><summary>View / select submission text</summary><label class="sr-only" for="resourcePacketText">Resource submission text</label><textarea id="resourcePacketText" rows="8" readonly></textarea></details></div>
+          </div>
+          <div id="panel-collection" role="tabpanel" aria-labelledby="tab-collection" class="form-card" hidden>
+            <h3>Prepare a collection</h3><p class="muted small">Any relevant committee, group, or university collaboration can propose a collection. Local creation does not assign official status or editing permissions.</p>
+            <form id="collectionForm"><input id="collectionId" type="hidden"><div class="form-grid">
+              <div class="field full"><label for="collectionTitle">Collection name *</label><input id="collectionTitle" maxlength="140" required placeholder="For example, Community Health and Planning"></div>
+              <div class="field"><label for="organizerType">Type of group *</label><select id="organizerType" required><option value="">Select a group type</option></select></div>
+              <div class="field"><label for="organizer">Committee / group name</label><input id="organizer" maxlength="180" placeholder="Leave blank if not yet assigned"></div>
+              <div class="field full"><label for="collectionInstitution">Participating institution(s)</label><input id="collectionInstitution" maxlength="250" placeholder="Optional public attribution"></div>
+              <div class="field full"><label for="collectionDescription">Collection description * <span class="muted">(20–100 words)</span></label><textarea id="collectionDescription" rows="5" maxlength="2200" required placeholder="Describe the collection's scope, audience, and intended contributions."></textarea><div id="collectionWordCount" class="help">0 words · Target: 20–100 words</div></div>
+              <fieldset class="full"><legend>Field / discipline * <span class="muted small">(select one or more)</span></legend><div id="collectionFields" class="check-grid"></div></fieldset>
+              <details class="full"><summary>Associated planning tracks <span class="muted">(optional)</span></summary><div id="collectionTopics" class="check-grid" style="margin-top:10px"></div></details>
+              <label class="full check-line"><input id="collectionConsent" type="checkbox" required><span>This information is suitable for public sharing. I understand that this draft does not create an official committee or grant repository access.</span></label>
+              <div class="full button-row"><button class="btn" type="submit">Preview & save locally</button><button class="link-button" id="resetCollection" type="button">Clear form / start new</button></div>
+            </div></form>
+            <div id="collectionStatus" role="status" tabindex="-1" class="status-message" hidden></div>
+            <div id="collectionPreview" class="preview-panel" hidden><h3>Your collection packet</h3><div id="collectionPreviewCard"></div><div class="button-row" style="margin-top:16px"><button class="btn secondary compact" type="button" id="downloadCollection">Download JSON</button><button class="btn secondary compact" type="button" id="copyCollection">Copy submission</button><a class="btn compact" id="collectionGitHub" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener noreferrer">Continue on GitHub</a></div><p class="help" id="collectionHandoffNote"></p><details><summary>View / select submission text</summary><label class="sr-only" for="collectionPacketText">Collection submission text</label><textarea id="collectionPacketText" rows="8" readonly></textarea></details></div>
+          </div>
+          <div id="panel-drafts" role="tabpanel" aria-labelledby="tab-drafts" class="form-card" hidden>
+            <h3>Local workspace</h3><p class="muted small">Drafts are stored only in this browser when storage is available. They are not a shared database, login account, or published catalog. Export them before switching devices or clearing browser data.</p>
+            <div class="button-row"><button class="btn secondary compact" id="downloadAllDrafts" type="button">Export all local drafts</button><button class="link-button" id="clearAllDrafts" type="button">Delete all local drafts</button></div>
+            <div id="draftsList" class="drafts-list"></div>
+            <div class="import-box"><label for="importFile">Import a resource, collection, or workspace JSON file</label><input id="importFile" type="file" accept=".json,application/json"><p class="help">Imports are validated and remain local drafts. Matching IDs replace local drafts only; published data is never overwritten. Maximum file size: 1 MB.</p></div>
+            <div id="workspaceStatus" class="status-message" role="status" tabindex="-1" hidden></div>
+          </div>
+        </div>
+        <aside class="form-aside">
+          <div class="card"><div class="small-caps">A practical contribution path</div><h3 style="margin-top:9px">You prepare. The group maintains.</h3><div class="step"><span class="step-number">1</span><div><strong>Prepare a contribution</strong><p>Use this form to create a complete entry without changing HTML or JavaScript.</p></div></div><div class="step"><span class="step-number">2</span><div><strong>Share the packet</strong><p>Download the JSON file for a maintainer, or open a GitHub issue after repository setup.</p></div></div><div class="step"><span class="step-number">3</span><div><strong>Update the shared library</strong><p>A repository maintainer adds the data and publishes the updated site. Groups can maintain their own data files once access is assigned.</p></div></div></div>
+          <div class="notice"><strong>No automatic publishing.</strong><br>This static version has no shared submission database or sign-in system. Nothing is sent when you save a draft. A connected repository and assigned maintainers are needed for public updates.</div>
+          <div class="card"><h3>For regular contributors</h3><p class="muted small">Committee editors can change their collection and resource JSON files through the shared repository instead of requesting an HTML change. Cross-listed resources need only one source record.</p><a class="text-link" href="#developers" style="display:block;margin-top:14px">See the collaboration model →</a></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <section class="section dev-section section-anchor" id="developers" aria-labelledby="developersHeading">
+    <div class="container">
+      <div class="section-heading"><div><div class="eyebrow">Open development</div><h2 id="developersHeading">Built across universities.<br>Maintained together.</h2></div><p>A shared source repository lets student developers and other collaborators contribute without depending on one person or institution.</p></div>
+      <div class="developer-grid"><article class="dev-card"><span class="card-number">01 / CO-DESIGN</span><h3>Interface & experience</h3><p>Improve navigation, visual design, mobile layouts, and accessibility. Discuss changes before introducing a new feature.</p></article><article class="dev-card"><span class="card-number">02 / CONTRIBUTE</span><h3>Data & collections</h3><p>Maintain structured resource files and group collections. Keep content separate from layout so subject experts do not need to edit the site code.</p></article><article class="dev-card"><span class="card-number">03 / MAINTAIN</span><h3>Testing & documentation</h3><p>Check contributions, fix problems, document decisions, and support student handovers. Use branches and pull requests for shared changes.</p></article></div>
+      <div class="dev-actions"><a class="btn secondary" id="repositoryLink" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener noreferrer">Shared repository not connected</a><a class="text-link" href="#developerGuide" id="openDeveloperGuide">Read the collaboration guide ↓</a></div>
+      <p class="small" id="repoSetupNote" style="color:#c5d6df;margin-top:18px">This package is prepared for shared development. No public repository, contributor permissions, or institutional endorsement has been created by this prototype.</p>
+      <details class="dev-guide section-anchor" id="developerGuide"><summary>Developer handoff & shared maintenance</summary><div class="guide-grid"><div><h3>One source of truth</h3><p>The ZIP contains editable source files, JSON data, validation and build scripts, contribution templates, and GitHub workflows. Build the portable HTML from those files rather than editing generated copies.</p><pre>src/                 HTML template, CSS, JavaScript
+data/collections/    One file per collection
+data/resources/      One file per resource
+scripts/             Validate, import, and build
+docs/                Setup and maintenance guides
+.github/             Issues, checks, deployment</pre><p>Local build, with Python 3.10 or newer:</p><pre>python scripts/validate.py
+python scripts/build.py
+python -m http.server 8000</pre></div><div><h3>Contribute from any university</h3><p>Use a shared organization-owned repository. Contributors can fork it, make changes on a branch, and propose a pull request. Assigned maintainers can then merge changes and publish a new version.</p><p>Committee editors maintain content; student developers maintain code and documentation. Keep at least two maintainers and document handovers so access does not end with one student's appointment.</p><h3 style="margin-top:25px">Connect the public workflow</h3><p>Set <code>githubRepository</code> in <code>data/config.json</code> to the real owner/repository, enable Issues, and configure GitHub Pages. Rebuild the HTML. The repository and submission links will then use that location.</p><p>Repository permissions and branch rules must be configured by an administrator. The included CODEOWNERS example does not grant access. Select and approve a code license before describing the project as open source.</p><p class="small">The local form is not a content management system. Authenticated, non-GitHub publishing would require a separately configured service.</p></div></div></details>
+    </div>
+  </section>
+  <section class="section section-anchor" id="about" aria-labelledby="aboutHeading"><div class="container"><div class="section-heading"><div><div class="eyebrow">About this direction</div><h2 id="aboutHeading">A shared hub, not a single-topic site.</h2></div></div><div class="about-grid"><article><div class="small-caps">Inclusive scope</div><h3>Planning and allied fields</h3><p>The hub brings together education, research, and practice across planning, policy, geography, design, environment, public health, and technology. AI is welcome but never required.</p></article><article><div class="small-caps">Distributed contribution</div><h3>Groups keep their identity</h3><p>Collections make committee and institutional contributions visible within a common library. Shared metadata supports discovery without forcing every group into an AI-centered structure.</p></article><article><div class="small-caps">Shared stewardship</div><h3>Continuity beyond one team</h3><p>Documented source files and contribution pathways support collaboration across universities. Platform ownership, publishing access, and maintenance responsibilities still need to be assigned.</p></article></div></div></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-inner"><div><strong data-site-title>Planning Knowledge Hub</strong><br>Working title · Collaborative prototype · <span id="year"></span></div><div class="footer-links"><a href="#explore">Explore</a><a href="#contribute">Contribute</a><a href="#developers">Developers</a><a href="#about">About</a></div></div><details class="privacy-note"><summary>Prototype status, local storage & attribution</summary><p>No official organizational name, committee assignment, or affiliation is asserted by this prototype. The published catalog starts empty, as in the original HTML. Example entries are fictional and are excluded from published counts. Drafts remain on this device unless you explicitly export or share them. Local storage is not encrypted and should not contain confidential information. External resource links and GitHub submissions take you to third-party websites. Source material retains its original reuse conditions.</p><p>Source package version <span id="version"></span>. Technical setup references and limitations are documented in <code>docs/</code>.</p></details></div></footer>
+<script id="hub-data" type="application/json">{"config":{"siteTitle":"Planning Knowledge Hub","tagline":"A shared resource hub for planning and allied fields.","githubRepository":"","githubBranch":"main","version":"2.0.0","status":"Working prototype","storageNamespace":"planning-knowledge-hub-v2"},"taxonomy":{"domains":["Education","Research","Practice"],"resourceTypes":["Course / Syllabus","Teaching Material","Publication","Research Project","Dataset","Code / Notebook","Tool","Workflow","Use Case","Policy / Guidance","Report","Event / Recording","Other"],"fields":[{"id":"planning","label":"Planning \u0026 Urban Studies"},{"id":"policy","label":"Public Policy \u0026 Governance"},{"id":"geography","label":"Geography \u0026 GIS"},{"id":"design","label":"Design \u0026 Built Environment"},{"id":"environment","label":"Environment \u0026 Sustainability"},{"id":"health","label":"Public Health \u0026 Community Development"},{"id":"computing","label":"Data Science \u0026 Technology"},{"id":"interdisciplinary","label":"Other / Interdisciplinary"}],"topics":[{"id":"track-1","label":"Track 1: AI in Planning"},{"id":"track-2","label":"Track 2: Community Development and Housing"},{"id":"track-3","label":"Track 3: Environmental Planning"},{"id":"track-4","label":"Track 4: Inclusion, Anti-racism and Accessibility in Planning"},{"id":"track-5","label":"Track 5: International Development Planning"},{"id":"track-6","label":"Track 6: Land Use Policy, Governance and Law"},{"id":"track-7","label":"Track 7: Food Systems and Community Health"},{"id":"track-8","label":"Track 8: Planning History, Theory and Education"},{"id":"track-9","label":"Track 9: Regional Planning \u0026 Economic Development"},{"id":"track-10","label":"Track 10: Quantitative and Spatial Methods"},{"id":"track-11","label":"Track 11: Transportation \u0026 Infrastructure Planning"},{"id":"track-12","label":"Track 12: Placemaking and Urban Design"}],"methods":["Qualitative Research","Community Engagement","Policy Analysis","GIS / Spatial Analysis","Statistical Analysis","Design Methods","Generative AI / LLMs","Machine Learning","NLP","Computer Vision","GeoAI","Predictive Analytics","Agents"],"organizerTypes":["Committee","Task Force","Research Group","University / Program","Cross-University Collaboration","Community / Practice Organization","Other"]},"collections":[{"id":"ai-in-planning","title":"AI in Planning","description":"Teaching, research, and applications of artificial intelligence in planning. Retained from the original repository as one collection within the broader hub.","organizerType":"Cross-University Collaboration","organizer":"","institution":"","fields":["planning","computing"],"topics":["track-1"],"status":"starter"},{"id":"community-and-housing","title":"Community Development \u0026 Housing","description":"Housing, community development, participation, and inclusive neighborhoods. A starter space for resources contributed across committees, disciplines, and institutions. Contributions can include education, research, and practice materials.","organizerType":"Cross-University Collaboration","organizer":"","institution":"","fields":["planning","health","policy"],"topics":["track-2","track-4"],"status":"starter"},{"id":"environment-and-climate","title":"Environment \u0026 Climate","description":"Environmental planning, climate adaptation, resilience, and sustainability. A starter space connecting planning knowledge with environmental research and practice. Contributions can include education, research, and practice materials.","organizerType":"Cross-University Collaboration","organizer":"","institution":"","fields":["environment","planning"],"topics":["track-3"],"status":"starter"},{"id":"planning-education","title":"Planning Education \u0026 Pedagogy","description":"Courses, teaching approaches, and learning materials across planning and allied fields. A starter space for educators and students from different universities.","organizerType":"Cross-University Collaboration","organizer":"","institution":"","fields":["planning","interdisciplinary"],"topics":["track-8"],"status":"starter"}],"resources":[],"examples":[{"id":"example-housing-studio","title":"Housing and community development studio syllabus","description":"This illustrative entry shows how a housing studio could share its course structure, community partnership approach, assignments, and assessment criteria. It demonstrates a non-AI education resource that connects planning with public policy and community development. The title, description, and metadata are examples only; no actual course, institution, or downloadable syllabus is represented.","url":"","domain":"Education","resourceType":"Course / Syllabus","fields":["planning","policy"],"topics":["track-2"],"collectionIds":["community-and-housing"],"method":"Community Engagement","keywords":[],"institution":"","contributor":"","date":"","geography":"","license":"Illustrative display only. Not an actual resource.","audience":"","isExample":true},{"id":"example-climate-methods","title":"Neighborhood climate adaptation research framework","description":"This illustrative entry demonstrates a research resource linking environmental planning, climate adaptation, and neighborhood-scale analysis. A real record could explain the research question, data requirements, methods, limitations, and intended audience before linking to a paper or project page. This sample does not describe an actual study or make any claim about results, authors, or institutions.","url":"","domain":"Research","resourceType":"Research Project","fields":["environment","planning"],"topics":["track-3"],"collectionIds":["environment-and-climate"],"method":"GIS / Spatial Analysis","keywords":[],"institution":"","contributor":"","date":"","geography":"","license":"Illustrative display only. Not an actual resource.","audience":"","isExample":true},{"id":"example-engagement-guide","title":"Inclusive community engagement field guide","description":"This illustrative entry shows how a practical guide could document accessible meeting formats, participant outreach, facilitation methods, and feedback reporting. It demonstrates that community-centered and qualitative resources belong in the hub alongside technical tools. The record is a fictional display example, not an endorsed guide, an official committee publication, or advice for a particular planning process.","url":"","domain":"Practice","resourceType":"Policy / Guidance","fields":["health","planning"],"topics":["track-4","track-2"],"collectionIds":["community-and-housing"],"method":"Community Engagement","keywords":[],"institution":"","contributor":"","date":"","geography":"","license":"Illustrative display only. Not an actual resource.","audience":"","isExample":true},{"id":"example-responsible-ai","title":"Teaching module on responsible AI in planning","description":"This illustrative entry shows how the original AI repository fits within a broader knowledge hub. A real teaching module could provide learning objectives, classroom activities, and discussion questions about using AI responsibly in planning. Here, AI is an optional method and a specific planning topic, not a requirement for every resource. No actual teaching materials are linked.","url":"","domain":"Education","resourceType":"Teaching Material","fields":["computing","planning"],"topics":["track-1"],"collectionIds":["ai-in-planning","planning-education"],"method":"Generative AI / LLMs","keywords":[],"institution":"","contributor":"","date":"","geography":"","license":"Illustrative display only. Not an actual resource.","audience":"","isExample":true},{"id":"example-spatial-access","title":"Reproducible spatial accessibility notebook","description":"This illustrative entry represents the structure of a research notebook record connecting geography, transportation, and planning methods. A real contribution could describe its input data, analytical steps, software requirements, and reproducibility limits, with a link to the source repository. This is a fictional metadata example only and does not provide executable code, observed data, or validated accessibility findings.","url":"","domain":"Research","resourceType":"Code / Notebook","fields":["geography","computing"],"topics":["track-10","track-11"],"collectionIds":[],"method":"GIS / Spatial Analysis","keywords":[],"institution":"","contributor":"","date":"","geography":"","license":"Illustrative display only. Not an actual resource.","audience":"","isExample":true},{"id":"example-public-space","title":"Public space design and observation toolkit","description":"This illustrative entry demonstrates how a design-oriented practice resource could be shared across architecture, urban design, and planning. A real toolkit could include observation templates, documentation methods, and instructions for interpreting public space use. This fictional record is provided only to test the catalog and filters; it does not identify an actual toolkit or recommend a design intervention.","url":"","domain":"Practice","resourceType":"Tool","fields":["design","planning"],"topics":["track-12"],"collectionIds":[],"method":"Design Methods","keywords":[],"institution":"","contributor":"","date":"","geography":"","license":"Illustrative display only. Not an actual resource.","audience":"","isExample":true}]}</script>
+<script>/*
+ * Planning Knowledge Hub: dependency-free, offline-capable browser application.
+ * Shared data is read-only here. Browser drafts never modify published data.
+ * Do not put credentials in this file, JSON data, or client-side storage.
+ */
+(function () {
+  'use strict';
+  const DATA = JSON.parse(document.getElementById('hub-data').textContent);
+  const CONFIG = DATA.config;
+  const TAX = DATA.taxonomy;
+  const PUBLISHED = DATA.resources;
+  const COLLECTIONS = DATA.collections;
+  const EXAMPLES = DATA.examples;
+  const $ = id => document.getElementById(id);
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const norm = value => String(value ?? '').trim().toLocaleLowerCase();
+  const words = value => String(value ?? '').trim().split(/\s+/u).filter(Boolean).length;
+  const idPattern = /^[a-z0-9][a-z0-9-]{0,99}$/;
+  const repoPattern = /^[A-Za-z0-9][A-Za-z0-9-]{0,38}\/[A-Za-z0-9_.-]{1,100}$/;
+  const repo = repoPattern.test(CONFIG.githubRepository || '') && !/\/(\.|\.\.)$/.test(CONFIG.githubRepository) ? CONFIG.githubRepository : '';
+  const repoURL = repo ? 'https://github.com/' + repo : '';
+  const storageKey = (CONFIG.storageNamespace || 'planning-knowledge-hub-v2') + ':' + (repo || 'prototype');
+  let persistenceAvailable = true;
+  let storageWarning = '';
+  let view = 'published';
+  let currentResource = null;
+  let currentCollection = null;
+
+  function plainObject(value) {
+    return value !== null && typeof value === 'object' && !Array.isArray(value);
+  }
+  function text(value, max, label, required = false) {
+    if (value !== undefined && value !== null && typeof value !== 'string') throw new Error(label + ' must be text.');
+    const result = (value || '').trim();
+    if (required && !result) throw new Error(label + ' is required.');
+    if (result.length > max) throw new Error(label + ' is too long.');
+    return result;
+  }
+  function list(value, allowed, label, max = 24) {
+    if (value === undefined) return [];
+    if (!Array.isArray(value) || value.length > max || value.some(x => typeof x !== 'string' || x.length > 140)) throw new Error(label + ' must be a short list of text values.');
+    const clean = [...new Set(value.map(x => x.trim()).filter(Boolean))];
+    if (allowed && clean.some(x => !allowed.includes(x))) throw new Error(label + ' contains an unknown category.');
+    return clean;
+  }
+  function safeURL(value) {
+    try {
+      const url = new URL(value);
+      return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password && url.hostname ? url.href : '';
+    } catch (_) { return ''; }
+  }
+  function uid(prefix) {
+    const random = typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID().replaceAll('-', '').slice(0, 12) : Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+    return prefix + '-' + random;
+  }
+  function normalizeRecord(raw, kind) {
+    if (!plainObject(raw)) throw new Error('The record must be a JSON object.');
+    const id = text(raw.id, 100, 'Record ID', true);
+    if (!idPattern.test(id)) throw new Error('Record IDs must use lowercase letters, numbers, and hyphens.');
+    const record = {
+      id,
+      title: text(raw.title, kind === 'resource' ? 160 : 140, 'Title', true),
+      description: text(raw.description, 2200, 'Description', true),
+      fields: list(raw.fields, TAX.fields.map(x => x.id), 'Fields'),
+      topics: list(raw.topics, TAX.topics.map(x => x.id), 'Planning tracks')
+    };
+    const count = words(record.description);
+    const minWords = kind === 'resource' ? 50 : 20;
+    if (count < minWords || count > 100) throw new Error('The description must contain ' + minWords + '–100 words (currently ' + count + ').');
+    if (!record.fields.length) throw new Error('Select at least one field / discipline.');
+    if (kind === 'resource') {
+      if (id.startsWith('example-')) throw new Error('Example IDs are reserved for fictional display records.');
+      record.url = text(raw.url, 1500, 'Resource URL', true);
+      if (!safeURL(record.url)) throw new Error('Use a valid http or https resource URL without embedded credentials.');
+      record.domain = text(raw.domain, 40, 'Domain', true);
+      record.resourceType = text(raw.resourceType, 60, 'Resource type', true);
+      if (!TAX.domains.includes(record.domain)) throw new Error('Select a valid resource domain.');
+      if (!TAX.resourceTypes.includes(record.resourceType)) throw new Error('Select a valid resource type.');
+      record.collectionIds = list(raw.collectionIds, null, 'Collections');
+      if (record.collectionIds.some(x => !idPattern.test(x))) throw new Error('A collection ID is invalid.');
+      record.method = text(raw.method, 120, 'Method');
+      record.keywords = list(raw.keywords, null, 'Keywords', 20);
+      record.institution = text(raw.institution, 180, 'Institution');
+      record.contributor = text(raw.contributor, 120, 'Contributor');
+      record.date = text(raw.date, 60, 'Date / version');
+      record.geography = text(raw.geography, 140, 'Geography');
+      record.license = text(raw.license, 700, 'Reuse notes');
+      record.audience = text(raw.audience, 180, 'Audience');
+    } else {
+      record.organizerType = text(raw.organizerType, 80, 'Group type', true);
+      if (!TAX.organizerTypes.includes(record.organizerType)) throw new Error('Select a valid group type.');
+      record.organizer = text(raw.organizer, 180, 'Organizer');
+      record.institution = text(raw.institution, 250, 'Institutions');
+      record.status = 'proposed'; // A local import never creates an official collection.
+    }
+    return record;
+  }
+  function normalizePacket(raw) {
+    if (!plainObject(raw)) throw new Error('Expected a contribution packet or resource record.');
+    let p = raw;
+    if (!p.kind && p.id) p = {schemaVersion: 1, kind: Object.hasOwn(p, 'url') ? 'resource' : 'collection', action: 'add', record: p};
+    if (p.schemaVersion !== 1 || !['resource', 'collection'].includes(p.kind)) throw new Error('Unsupported packet type or schema version.');
+    const action = p.action || 'add';
+    if (!['add', 'update'].includes(action)) throw new Error('Unsupported contribution action.');
+    return {schemaVersion: 1, kind: p.kind, action, record: normalizeRecord(p.record, p.kind)};
+  }
+  function normalizeWorkspace(raw) {
+    if (!plainObject(raw) || !Array.isArray(raw.resources) || !Array.isArray(raw.collections)) throw new Error('Invalid workspace format.');
+    if (raw.resources.length + raw.collections.length > 500) throw new Error('A workspace may contain at most 500 drafts.');
+    const clean = {resources: [], collections: []};
+    for (const [key, kind] of [['collections','collection'], ['resources','resource']]) {
+      const seen = new Set();
+      clean[key] = raw[key].map(p => {
+        const packet = normalizePacket(p);
+        if (packet.kind !== kind || seen.has(packet.record.id)) throw new Error('Incorrect or duplicate draft in workspace.');
+        seen.add(packet.record.id);
+        return packet;
+      });
+    }
+    checkCollectionReferences(clean.resources, clean.collections);
+    return clean;
+  }
+  function checkCollectionReferences(resources, collections) {
+    const ids = new Set([...COLLECTIONS.map(x => x.id), ...collections.map(x => x.record.id)]);
+    for (const packet of resources) {
+      if (packet.record.collectionIds.some(id => !ids.has(id))) throw new Error('A resource refers to an unknown collection. Import its collection packet first, or include it in the workspace.');
+    }
+  }
+  function loadState() {
+    try {
+      const value = localStorage.getItem(storageKey);
+      return value ? normalizeWorkspace(JSON.parse(value)) : {resources: [], collections: []};
+    } catch (error) {
+      storageWarning = 'Saved drafts could not be loaded. No published data was changed. ' + error.message;
+      return {resources: [], collections: []};
+    }
+  }
+  let state = loadState();
+  function persist() {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(state));
+      persistenceAvailable = true;
+      return true;
+    } catch (_) {
+      persistenceAvailable = false;
+      return false;
+    }
+  }
+  function status(id, message, isError = false) {
+    const el = $(id);
+    el.hidden = false;
+    el.classList.toggle('error', isError);
+    el.textContent = message;
+  }
+  function options(id, items, placeholder, keep = false) {
+    const el = $(id), old = keep ? el.value : '';
+    el.innerHTML = '<option value="">' + esc(placeholder) + '</option>' + items.map(x => {
+      const value = typeof x === 'string' ? x : x.id;
+      const label = typeof x === 'string' ? x : x.label;
+      return '<option value="' + esc(value) + '">' + esc(label) + '</option>';
+    }).join('');
+    if ([...el.options].some(x => x.value === old)) el.value = old;
+  }
+  function checkboxes(id, items, selected = []) {
+    $(id).innerHTML = items.map(x => '<label class="check-option"><input type="checkbox" value="' + esc(x.id) + '"' + (selected.includes(x.id) ? ' checked' : '') + '><span>' + esc(x.label) + '</span></label>').join('');
+  }
+  const checked = id => [...$(id).querySelectorAll('input:checked')].map(x => x.value);
+  function setChecked(id, values) {
+    $(id).querySelectorAll('input').forEach(x => { x.checked = (values || []).includes(x.value); });
+  }
+  function allCollections() {
+    const map = new Map(COLLECTIONS.map(x => [x.id, x]));
+    state.collections.forEach(p => { if (!map.has(p.record.id)) map.set(p.record.id, {...p.record, local: true}); });
+    return [...map.values()];
+  }
+  const labels = (ids, taxonomy) => (ids || []).map(id => taxonomy.find(x => x.id === id)?.label || id);
+  const fieldLabels = ids => labels(ids, TAX.fields);
+  const topicLabels = ids => labels(ids, TAX.topics);
+  const collectionNames = ids => (ids || []).map(id => allCollections().find(x => x.id === id)?.title || id);
+
+  function initTaxonomy() {
+    options('domain', TAX.domains, 'All domains');
+    options('formDomain', TAX.domains, 'Select a domain');
+    options('fieldFilter', TAX.fields, 'All fields');
+    options('planningTopic', TAX.topics, 'All planning tracks');
+    options('resourceType', TAX.resourceTypes, 'All types');
+    options('formType', TAX.resourceTypes, 'Select a type');
+    options('organizerType', TAX.organizerTypes, 'Select a group type');
+    checkboxes('formFields', TAX.fields);
+    checkboxes('collectionFields', TAX.fields);
+    checkboxes('formTopics', TAX.topics);
+    checkboxes('collectionTopics', TAX.topics);
+    $('methodOptions').innerHTML = TAX.methods.map(x => '<option value="' + esc(x) + '"></option>').join('');
+  }
+  function refreshDynamicOptions() {
+    const selected = checked('formCollections');
+    const collections = allCollections().map(x => ({id: x.id, label: x.title + (x.local ? ' (local draft)' : '')}));
+    options('collectionFilter', collections, 'All collections', true);
+    checkboxes('formCollections', collections, selected);
+    const methods = [...new Set([...TAX.methods, ...PUBLISHED.map(x => x.method), ...EXAMPLES.map(x => x.method), ...state.resources.map(x => x.record.method)].filter(Boolean))].sort((a,b) => a.localeCompare(b));
+    options('methodFilter', methods, 'All methods, including non-AI', true);
+  }
+  function sourceRecords() {
+    return view === 'examples' ? EXAMPLES : view === 'drafts' ? state.resources.map(p => ({...p.record, local: true, action: p.action})) : PUBLISHED;
+  }
+  function filteredRecords() {
+    const query = norm($('search').value);
+    const result = sourceRecords().filter(r => {
+      const haystack = norm([r.title, r.description, r.domain, r.resourceType, r.method, r.institution, r.contributor, r.geography, r.audience, ...fieldLabels(r.fields), ...topicLabels(r.topics), ...collectionNames(r.collectionIds), ...(r.keywords || [])].join(' '));
+      return (!query || query.split(/\s+/).every(term => haystack.includes(term)))
+        && (!$('domain').value || r.domain === $('domain').value)
+        && (!$('fieldFilter').value || (r.fields || []).includes($('fieldFilter').value))
+        && (!$('planningTopic').value || (r.topics || []).includes($('planningTopic').value))
+        && (!$('collectionFilter').value || (r.collectionIds || []).includes($('collectionFilter').value))
+        && (!$('resourceType').value || r.resourceType === $('resourceType').value)
+        && (!$('methodFilter').value || norm(r.method) === norm($('methodFilter').value));
+    });
+    return result.sort((a, b) => ($('sort').value === 'domain' ? a.domain.localeCompare(b.domain) : 0) || a.title.localeCompare(b.title));
+  }
+  function renderResource(r, mode = view, controls = true) {
+    const isExample = mode === 'examples' || r.isExample;
+    const isLocal = mode === 'drafts' || r.local;
+    const url = safeURL(r.url);
+    const title = !isExample && url ? '<a class="resource-title" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(r.title) + '</a>' : '<span class="resource-title">' + esc(r.title) + '</span>';
+    const badge = isExample ? '<span class="badge">Fictional example</span>' : isLocal ? '<span class="badge draft">Local draft' + (r.action === 'update' ? ' · Suggested update' : '') + '</span>' : '<span class="badge">Published entry</span>';
+    const metadata = [fieldLabels(r.fields).join(' · '), r.institution, r.date].filter(Boolean);
+    const detailRows = [
+      ['Planning tracks', topicLabels(r.topics).join('; ')],
+      ['Collections', collectionNames(r.collectionIds).join('; ')],
+      ['Method / tool', r.method], ['Keywords', (r.keywords || []).join(', ')],
+      ['Audience', r.audience], ['Geography', r.geography],
+      ['Contributor', r.contributor], ['Reuse / attribution', r.license || 'Not specified. Check the original source.']
+    ].filter(x => x[1]);
+    const action = !controls || isExample ? '' : isLocal ? '<button class="link-button" type="button" data-edit-resource="' + esc(r.id) + '">Edit local draft</button>' : '<button class="link-button" type="button" data-suggest-id="' + esc(r.id) + '">Suggest an update</button>';
+    return '<article class="resource-item"><div class="resource-top"><span class="resource-type">' + esc(r.domain) + ' / ' + esc(r.resourceType) + '</span>' + badge + '</div><h3>' + title + '</h3><p class="resource-description">' + esc(r.description) + '</p><div class="resource-meta">' + metadata.map(x => '<span>' + esc(x) + '</span>').join('') + '</div><details><summary>Resource details</summary>' + detailRows.map(x => '<p><strong>' + esc(x[0]) + ':</strong> ' + esc(x[1]) + '</p>').join('') + '</details>' + (action ? '<div class="resource-actions">' + action + '</div>' : '') + '</article>';
+  }
+  function renderCatalog() {
+    document.querySelectorAll('.segmented [data-view]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+    $('publishedCount').textContent = PUBLISHED.length;
+    $('draftCount').textContent = state.resources.length;
+    $('exampleNotice').hidden = view !== 'examples';
+    $('draftNotice').hidden = view !== 'drafts';
+    $('catalogNote').textContent = view === 'examples' ? 'Demonstration only. No real resources are represented.' : view === 'drafts' ? 'Private to this browser, not a shared account.' : PUBLISHED.length ? 'Resources included in this version of the public catalog.' : 'The public catalog is ready for its first resources.';
+    const result = filteredRecords(), total = sourceRecords().length;
+    const noun = view === 'examples' ? 'example entries' : view === 'drafts' ? 'local resource drafts' : 'published resources';
+    $('resultCount').textContent = result.length + ' of ' + total + ' ' + noun;
+    if (result.length) { $('resourceList').innerHTML = result.map(r => renderResource(r)).join(''); return; }
+    const isFiltered = ['search','domain','fieldFilter','planningTopic','collectionFilter','resourceType','methodFilter'].some(id => $(id).value);
+    let title = 'The library starts with your contributions.';
+    let message = 'No resources have been published in this prototype. Explore fictional examples to see how different fields fit, or prepare the first resource.';
+    let buttons = '<button class="btn secondary compact" type="button" data-set-view="examples">Preview example entries</button><a class="btn compact" href="#contribute" data-open-tab="resource">Prepare a resource</a>';
+    if (isFiltered) {
+      title = 'No matching entries in this view.';
+      message = 'Try a broader search or clear the filters. Example entries, local drafts, and the published catalog are intentionally kept separate.';
+      buttons = '<button class="btn secondary compact" type="button" data-clear-all>Clear filters</button>';
+    } else if (view === 'drafts') {
+      title = 'Your local workspace is empty.';
+      message = 'Save a resource through the contribution form to preview it here. Nothing is sent or published when you create a local draft.';
+      buttons = '<a class="btn compact" href="#contribute" data-open-tab="resource">Prepare a resource</a>';
+    }
+    $('resourceList').innerHTML = '<div class="empty-state"><div class="empty-symbol" aria-hidden="true">+</div><h3>' + title + '</h3><p>' + message + '</p><div class="button-row">' + buttons + '</div></div>';
+  }
+  function renderCollection(c, local = false, controls = true) {
+    const count = PUBLISHED.filter(r => (r.collectionIds || []).includes(c.id)).length;
+    const badge = local ? 'Local collection draft' : c.status === 'starter' ? 'Starter collection' : c.status === 'proposed' ? 'Proposed collection' : 'Collection';
+    const initials = c.title.split(/\s+/).slice(0, 2).map(x => x[0]).join('').toUpperCase();
+    const organizer = c.organizer ? c.organizer : 'Organizer not yet assigned';
+    const footer = controls ? '<div class="collection-footer"><span>' + (local ? 'Not published' : count + ' published resources') + '</span><button class="link-button" type="button" data-filter-collection="' + esc(c.id) + '" data-collection-local="' + local + '">' + (local ? 'Browse local drafts' : 'Browse collection') + ' →</button></div>' : '';
+    return '<article class="card collection-card"><div class="collection-header"><span class="collection-initial" aria-hidden="true">' + esc(initials) + '</span><span class="badge' + (local ? ' draft' : '') + '">' + badge + '</span></div><h3>' + esc(c.title) + '</h3><p>' + esc(c.description) + '</p><div class="collection-meta"><strong>' + esc(organizer) + '</strong>' + (c.institution ? '<br>' + esc(c.institution) : '') + '<br>' + esc(fieldLabels(c.fields).join(' · ')) + '</div>' + footer + '</article>';
+  }
+  function renderCollections() {
+    $('collectionGrid').innerHTML = COLLECTIONS.map(c => renderCollection(c)).join('') + state.collections.map(p => renderCollection(p.record, true)).join('');
+  }
+  function renderDrafts() {
+    const packets = [...state.collections, ...state.resources];
+    $('draftsList').innerHTML = packets.length ? packets.map(p => '<div class="draft-item"><div><strong>' + esc(p.record.title) + '</strong><small>' + (p.kind === 'resource' ? 'Resource' : 'Collection') + ' · ' + (p.action === 'update' ? 'Suggested update' : 'New contribution') + ' · Local only</small></div><div class="draft-actions"><button class="link-button" type="button" data-draft-action="edit" data-kind="' + p.kind + '" data-id="' + esc(p.record.id) + '">Edit</button><button class="link-button" type="button" data-draft-action="export" data-kind="' + p.kind + '" data-id="' + esc(p.record.id) + '">Export</button><button class="link-button" type="button" data-draft-action="delete" data-kind="' + p.kind + '" data-id="' + esc(p.record.id) + '">Delete</button></div></div>').join('') : '<p class="muted small">No drafts saved yet.</p>';
+    $('downloadAllDrafts').disabled = !packets.length;
+    $('clearAllDrafts').disabled = !packets.length;
+  }
+  function refresh() { refreshDynamicOptions(); renderCatalog(); renderCollections(); renderDrafts(); }
+  function setView(value) { if (['published','examples','drafts'].includes(value)) { view = value; renderCatalog(); } }
+  function clearFilters() {
+    ['search','domain','fieldFilter','planningTopic','collectionFilter','resourceType','methodFilter'].forEach(id => { $(id).value = ''; });
+    $('sort').value = 'title'; renderCatalog();
+  }
+  function navigateTo(id) {
+    if (location.hash !== '#' + id) location.hash = id;
+    $(id)?.scrollIntoView({block: 'start'});
+  }
+  function setTab(key, focus = false) {
+    if (!['resource','collection','drafts'].includes(key)) return;
+    document.querySelectorAll('[data-tab]').forEach(b => {
+      const active = b.dataset.tab === key;
+      b.setAttribute('aria-selected', String(active)); b.tabIndex = active ? 0 : -1;
+      $('panel-' + b.dataset.tab).hidden = !active;
+      if (active && focus) b.focus();
+    });
+  }
+  function updateWordCounts() {
+    const n = words($('resourceDescription').value), c = words($('collectionDescription').value);
+    $('wordCount').textContent = n + ' words · Target: 50–100 words';
+    $('collectionWordCount').textContent = c + ' words · Target: 20–100 words';
+  }
+  function downloadJSON(value, filename) {
+    const blob = new Blob([JSON.stringify(value, null, 2) + '\n'], {type: 'application/json;charset=utf-8'});
+    const url = URL.createObjectURL(blob), a = document.createElement('a');
+    a.href = url; a.download = filename; document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1500);
+  }
+  function markdown(packet) {
+    return '## ' + (packet.kind === 'resource' ? 'Resource contribution' : 'Collection proposal') + '\n\nAction: ' + packet.action + '\n\nPlease check the source, metadata, reuse conditions, and collection ownership before adding this packet to the shared repository.\n\n```json\n' + JSON.stringify(packet, null, 2) + '\n```\n\nThis packet was prepared with the Planning Knowledge Hub form. It is not an automatic publication request or an assertion of official committee status.\n';
+  }
+  function setupHandoff(packet) {
+    const kind = packet.kind, link = $(kind + 'GitHub'), note = $(kind + 'HandoffNote');
+    const body = markdown(packet);
+    $(kind + 'PacketText').value = body;
+    if (!repoURL) {
+      link.removeAttribute('href'); link.setAttribute('aria-disabled', 'true'); link.tabIndex = -1;
+      note.textContent = 'GitHub handoff is not connected. Download the JSON file and share it with the designated maintainer. Saving or downloading does not submit it.';
+      return;
+    }
+    const url = new URL(repoURL + '/issues/new');
+    url.searchParams.set('template', packet.kind + '.md');
+    url.searchParams.set('title', '[' + (packet.kind === 'resource' ? 'Resource' : 'Collection') + '] ' + packet.record.title);
+    url.searchParams.set('body', body);
+    if (url.href.length > 7000) {
+      url.searchParams.delete('body');
+      note.textContent = 'This packet is too long for this site’s URL-prefill limit. Copy the submission above, open GitHub, paste it into the issue, and submit it there. A GitHub account is required.';
+    } else {
+      note.textContent = 'This opens a prefilled GitHub issue. Sign in, check the public content, and submit the issue there. Opening the link alone does not send or publish the contribution.';
+    }
+    link.href = url.href; link.removeAttribute('aria-disabled'); link.tabIndex = 0;
+  }
+  async function copyPacket(kind) {
+    const packet = kind === 'resource' ? currentResource : currentCollection;
+    if (!packet) return;
+    const value = markdown(packet);
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(value);
+      status(kind + 'Status', 'Submission text copied. Nothing has been sent or published.');
+    } catch (_) {
+      const area = $(kind + 'PacketText'); area.closest('details').open = true; area.focus(); area.select();
+      status(kind + 'Status', 'Automatic copying is unavailable here. The submission text is selected; copy it using your browser or keyboard.');
+    }
+  }
+  function showPreview(packet) {
+    const kind = packet.kind;
+    if (kind === 'resource') { currentResource = packet; $('resourcePreviewCard').innerHTML = renderResource({...packet.record, local: true, action: packet.action}, 'drafts', false); }
+    else { currentCollection = packet; $('collectionPreviewCard').innerHTML = renderCollection(packet.record, true, false); }
+    $(kind + 'Preview').hidden = false;
+    setupHandoff(packet);
+  }
+  function upsert(packet) {
+    const key = packet.kind === 'resource' ? 'resources' : 'collections';
+    const i = state[key].findIndex(p => p.record.id === packet.record.id);
+    if (i === -1 && state.resources.length + state.collections.length >= 500) throw new Error('The local workspace is limited to 500 drafts. Export and remove older drafts first.');
+    if (i === -1) state[key].push(packet); else state[key][i] = packet;
+  }
+  function saveResource(event) {
+    event.preventDefault();
+    if (!$('resourceForm').reportValidity()) return;
+    try {
+      const record = normalizeRecord({
+        id: $('recordId').value || uid('res'), title: $('resourceTitle').value, url: $('resourceUrl').value,
+        description: $('resourceDescription').value, domain: $('formDomain').value, resourceType: $('formType').value,
+        fields: checked('formFields'), topics: checked('formTopics'), collectionIds: checked('formCollections'),
+        method: $('formMethod').value, keywords: $('formKeywords').value.split(',').map(x => x.trim()).filter(Boolean),
+        institution: $('institution').value, contributor: $('contributor').value, date: $('resourceDate').value,
+        geography: $('geography').value, license: $('license').value, audience: $('audience').value
+      }, 'resource');
+      const packet = {schemaVersion: 1, kind: 'resource', action: $('recordAction').value || 'add', record};
+      checkCollectionReferences([packet], state.collections);
+      $('recordId').value = record.id;
+      upsert(packet); const saved = persist(); refresh(); showPreview(packet);
+      status('resourceStatus', saved ? 'Saved in this browser only. Preview the entry below, then download or explicitly share its contribution packet. It is not published.' : 'Prepared for this session only: browser storage is unavailable. Download the JSON now to keep a copy. Nothing was sent or published.');
+      $('resourceStatus').focus({preventScroll: true});
+    } catch (error) { status('resourceStatus', error.message, true); $('resourceStatus').focus(); }
+  }
+  function saveCollection(event) {
+    event.preventDefault();
+    if (!$('collectionForm').reportValidity()) return;
+    try {
+      const record = normalizeRecord({
+        id: $('collectionId').value || uid('collection'), title: $('collectionTitle').value,
+        description: $('collectionDescription').value, organizerType: $('organizerType').value,
+        organizer: $('organizer').value, institution: $('collectionInstitution').value,
+        fields: checked('collectionFields'), topics: checked('collectionTopics')
+      }, 'collection');
+      const old = state.collections.find(p => p.record.id === record.id);
+      const packet = {schemaVersion: 1, kind: 'collection', action: old?.action || 'add', record};
+      $('collectionId').value = record.id; upsert(packet); const saved = persist(); refresh(); showPreview(packet);
+      status('collectionStatus', saved ? 'Collection draft saved in this browser. It can now be selected for local resource drafts. No official collection, publishing access, or shared record has been created.' : 'Collection prepared for this session only. Browser storage is unavailable, so export the JSON to keep a copy. This does not create a shared collection.');
+      $('collectionStatus').focus({preventScroll: true});
+    } catch (error) { status('collectionStatus', error.message, true); $('collectionStatus').focus(); }
+  }
+  function resetResource() {
+    $('resourceForm').reset(); $('recordId').value = ''; $('recordAction').value = 'add';
+    $('resourceFormHeading').textContent = 'Prepare a resource';
+    $('resourcePreview').hidden = true; $('resourceStatus').hidden = true; currentResource = null; updateWordCounts();
+  }
+  function resetCollection() {
+    $('collectionForm').reset(); $('collectionId').value = '';
+    $('collectionPreview').hidden = true; $('collectionStatus').hidden = true; currentCollection = null; updateWordCounts();
+  }
+  function editResource(record, action = 'add') {
+    resetResource();
+    const fields = {recordId:'id',resourceTitle:'title',resourceUrl:'url',resourceDescription:'description',formDomain:'domain',formType:'resourceType',formMethod:'method',institution:'institution',contributor:'contributor',resourceDate:'date',geography:'geography',license:'license',audience:'audience'};
+    for (const [id, key] of Object.entries(fields)) $(id).value = record[key] || '';
+    $('recordAction').value = action; $('formKeywords').value = (record.keywords || []).join(', ');
+    setChecked('formFields', record.fields); setChecked('formTopics', record.topics); setChecked('formCollections', record.collectionIds);
+    $('resourceFormHeading').textContent = action === 'update' ? 'Suggest an update to a published resource' : 'Edit your local resource draft';
+    updateWordCounts(); setTab('resource'); navigateTo('contribute'); $('resourceTitle').focus({preventScroll: true});
+  }
+  function editCollection(packet) {
+    resetCollection(); const r = packet.record;
+    const fields = {collectionId:'id',collectionTitle:'title',collectionDescription:'description',organizerType:'organizerType',organizer:'organizer',collectionInstitution:'institution'};
+    for (const [id, key] of Object.entries(fields)) $(id).value = r[key] || '';
+    setChecked('collectionFields', r.fields); setChecked('collectionTopics', r.topics);
+    updateWordCounts(); setTab('collection'); navigateTo('contribute'); $('collectionTitle').focus({preventScroll: true});
+  }
+  async function importJSON(event) {
+    const file = event.target.files?.[0]; if (!file) return;
+    try {
+      if (file.size > 1024 * 1024) throw new Error('The import file is larger than 1 MB.');
+      const raw = JSON.parse(await file.text());
+      let incoming;
+      if (raw.kind === 'workspace' && raw.schemaVersion === 1) incoming = normalizeWorkspace(raw);
+      else {
+        const packet = normalizePacket(raw);
+        incoming = {resources: packet.kind === 'resource' ? [packet] : [], collections: packet.kind === 'collection' ? [packet] : []};
+      }
+      const merged = {resources: [...state.resources], collections: [...state.collections]};
+      for (const key of ['collections','resources']) {
+        for (const p of incoming[key]) {
+          const i = merged[key].findIndex(x => x.record.id === p.record.id);
+          if (i === -1) merged[key].push(p); else merged[key][i] = p;
+        }
+      }
+      checkCollectionReferences(merged.resources, merged.collections);
+      if (merged.resources.length + merged.collections.length > 500) throw new Error('This import exceeds the 500-draft workspace limit.');
+      state = merged; const saved = persist(); refresh();
+      status('workspaceStatus', 'Imported ' + (incoming.resources.length + incoming.collections.length) + ' contribution packet(s) as local drafts. ' + (saved ? 'Saved in this browser. ' : 'Storage is unavailable; export before closing. ') + 'No shared or published records were changed.');
+    } catch (error) { status('workspaceStatus', 'Import stopped: ' + error.message, true); }
+    event.target.value = '';
+  }
+  function handleDraftAction(button) {
+    const key = button.dataset.kind === 'resource' ? 'resources' : 'collections';
+    const p = state[key].find(x => x.record.id === button.dataset.id); if (!p) return;
+    if (button.dataset.draftAction === 'export') { downloadJSON(p, p.record.id + '.json'); return; }
+    if (button.dataset.draftAction === 'edit') { p.kind === 'resource' ? editResource(p.record, p.action) : editCollection(p); return; }
+    if (p.kind === 'collection' && !COLLECTIONS.some(c => c.id === p.record.id) && state.resources.some(r => r.record.collectionIds.includes(p.record.id))) {
+      status('workspaceStatus', 'This collection is used by local resource drafts. Remove those collection associations before deleting the collection draft.', true); return;
+    }
+    if (!confirm('Delete this local draft? Published records will not change.')) return;
+    state[key] = state[key].filter(x => x.record.id !== p.record.id);
+    if (p.kind === 'resource' && $('recordId').value === p.record.id) resetResource();
+    if (p.kind === 'collection' && $('collectionId').value === p.record.id) resetCollection();
+    const saved = persist(); refresh();
+    status('workspaceStatus', saved ? 'Local draft deleted. Published records were not changed.' : 'Draft removed for this session, but browser storage could not be updated.');
+  }
+  function handleHash() {
+    const hash = location.hash.slice(1);
+    const legacy = {education:'Education',research:'Research',practice:'Practice'};
+    if (legacy[hash]) { clearFilters(); $('domain').value = legacy[hash]; setView('published'); $('explore').scrollIntoView(); }
+    else if (hash.startsWith('explore?')) {
+      const params = new URLSearchParams(hash.split('?')[1]);
+      clearFilters();
+      if (allCollections().some(c => c.id === params.get('collection'))) $('collectionFilter').value = params.get('collection');
+      setView('published'); $('explore').scrollIntoView();
+    }
+  }
+
+  // Event setup. Dynamic controls use one delegated click listener.
+  $('resourceForm').addEventListener('submit', saveResource);
+  $('collectionForm').addEventListener('submit', saveCollection);
+  $('resetResource').addEventListener('click', resetResource);
+  $('resetCollection').addEventListener('click', resetCollection);
+  for (const kind of ['resource','collection']) {
+    $(kind + 'Form').addEventListener('input', () => {
+      $(kind + 'Preview').hidden = true; $(kind + 'Status').hidden = true;
+      if (kind === 'resource') currentResource = null; else currentCollection = null;
+      updateWordCounts();
+    });
+    $(kind + 'Form').addEventListener('change', () => { $(kind + 'Preview').hidden = true; });
+  }
+  $('downloadResource').addEventListener('click', () => { if (currentResource) downloadJSON(currentResource, currentResource.record.id + '.json'); });
+  $('downloadCollection').addEventListener('click', () => { if (currentCollection) downloadJSON(currentCollection, currentCollection.record.id + '.json'); });
+  $('copyResource').addEventListener('click', () => copyPacket('resource'));
+  $('copyCollection').addEventListener('click', () => copyPacket('collection'));
+  $('importFile').addEventListener('change', importJSON);
+  $('downloadAllDrafts').addEventListener('click', () => downloadJSON({schemaVersion: 1, kind: 'workspace', ...state}, 'planning-hub-local-workspace.json'));
+  $('clearAllDrafts').addEventListener('click', () => {
+    if (!confirm('Delete all drafts in this browser? Export a backup first. Published data will not change.')) return;
+    state = {resources: [], collections: []}; const saved = persist(); resetResource(); resetCollection(); refresh();
+    status('workspaceStatus', saved ? 'All local drafts deleted. Published records were not changed.' : 'Drafts cleared in this session, but browser storage could not be updated.');
+  });
+  $('search').addEventListener('input', renderCatalog);
+  ['domain','fieldFilter','planningTopic','collectionFilter','resourceType','methodFilter','sort'].forEach(id => $(id).addEventListener('change', renderCatalog));
+  $('clearFilters').addEventListener('click', clearFilters);
+  document.addEventListener('click', event => {
+    const el = event.target.closest('button,a'); if (!el) return;
+    if (el.getAttribute('aria-disabled') === 'true') { event.preventDefault(); return; }
+    if (el.dataset.view || el.dataset.setView) { setView(el.dataset.view || el.dataset.setView); return; }
+    if (el.hasAttribute('data-clear-all')) { clearFilters(); return; }
+    if (el.dataset.tab) { setTab(el.dataset.tab); return; }
+    if (el.dataset.openTab) { setTab(el.dataset.openTab); }
+    if (el.dataset.domain) { event.preventDefault(); clearFilters(); $('domain').value = el.dataset.domain; setView('published'); navigateTo('explore'); }
+    if (el.dataset.filterCollection) { clearFilters(); $('collectionFilter').value = el.dataset.filterCollection; setView(el.dataset.collectionLocal === 'true' ? 'drafts' : 'published'); navigateTo('explore'); }
+    if (el.dataset.editResource) { const p = state.resources.find(x => x.record.id === el.dataset.editResource); if (p) editResource(p.record, p.action); }
+    if (el.dataset.suggestId) { const r = PUBLISHED.find(x => x.id === el.dataset.suggestId); if (r) editResource(r, 'update'); }
+    if (el.dataset.draftAction) handleDraftAction(el);
+  });
+  document.querySelector('[role="tablist"]').addEventListener('keydown', e => {
+    if (!['ArrowLeft','ArrowRight','Home','End'].includes(e.key)) return;
+    const tabs = [...document.querySelectorAll('[data-tab]')], i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    e.preventDefault();
+    const next = e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : (i + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+    setTab(tabs[next].dataset.tab, true);
+  });
+  const toggle = document.querySelector('.nav-toggle'), nav = $('site-navigation');
+  toggle.addEventListener('click', () => { const open = nav.classList.toggle('open'); toggle.setAttribute('aria-expanded', String(open)); });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); }));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && nav.classList.contains('open')) { nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); toggle.focus(); } });
+  $('openDeveloperGuide').addEventListener('click', () => { $('developerGuide').open = true; });
+  window.addEventListener('hashchange', handleHash);
+  document.querySelectorAll('[data-site-title]').forEach(el => { el.textContent = CONFIG.siteTitle; });
+  document.title = CONFIG.siteTitle;
+  document.querySelector('.brand').setAttribute('aria-label', CONFIG.siteTitle + ' home');
+  $('version').textContent = CONFIG.version;
+  $('year').textContent = new Date().getFullYear();
+  if (repoURL) {
+    $('repositoryLink').href = repoURL; $('repositoryLink').textContent = 'View shared repository ↗'; $('repositoryLink').removeAttribute('aria-disabled'); $('repositoryLink').tabIndex = 0;
+    $('connectionLabel').textContent = 'Working prototype · GitHub handoff configured';
+    $('repoSetupNote').textContent = 'Repository handoff is configured. GitHub sign-in, repository permissions, and a maintainer action are still required to submit and publish changes.';
+  }
+  initTaxonomy(); refresh(); updateWordCounts(); handleHash();
+  if (storageWarning) status('workspaceStatus', storageWarning, true);
+})();
+</script>
+</body>
+</html>

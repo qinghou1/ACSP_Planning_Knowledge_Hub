@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Resource record",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "description",
+    "url",
+    "domain",
+    "resourceType",
+    "fields"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,99}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2200,
+      "description": "50–100 whitespace-delimited words for resources; 20–100 for collections. Enforced by scripts/validate.py."
+    },
+    "fields": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 24,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "planning",
+          "policy",
+          "geography",
+          "design",
+          "environment",
+          "health",
+          "computing",
+          "interdisciplinary"
+        ]
+      }
+    },
+    "topics": {
+      "type": "array",
+      "maxItems": 24,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "track-1",
+          "track-2",
+          "track-3",
+          "track-4",
+          "track-5",
+          "track-6",
+          "track-7",
+          "track-8",
+          "track-9",
+          "track-10",
+          "track-11",
+          "track-12"
+        ]
+      }
+    },
+    "institution": {
+      "type": "string",
+      "maxLength": 180
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://",
+      "maxLength": 1500
+    },
+    "domain": {
+      "enum": [
+        "Education",
+        "Research",
+        "Practice"
+      ]
+    },
+    "resourceType": {
+      "enum": [
+        "Course / Syllabus",
+        "Teaching Material",
+        "Publication",
+        "Research Project",
+        "Dataset",
+        "Code / Notebook",
+        "Tool",
+        "Workflow",
+        "Use Case",
+        "Policy / Guidance",
+        "Report",
+        "Event / Recording",
+        "Other"
+      ]
+    },
+    "collectionIds": {
+      "type": "array",
+      "maxItems": 24,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]{0,99}$"
+      }
+    },
+    "keywords": {
+      "type": "array",
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 140
+      }
+    },
+    "method": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "contributor": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "date": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "geography": {
+      "type": "string",
+      "maxLength": 140
+    },
+    "license": {
+      "type": "string",
+      "maxLength": 700
+    },
+    "audience": {
+      "type": "string",
+      "maxLength": 180
+    }
+  },
+  "additionalProperties": false
+}
