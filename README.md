@@ -1,5 +1,6 @@
 # Planning Knowledge Hub
 https://qinghou1.github.io/ACSP_Planning_Knowledge_Hub/
+
 A broader successor to `AI-in-Planning-Repository-Self-Contained.html`.
 
 **Working title:** Planning Knowledge Hub  
