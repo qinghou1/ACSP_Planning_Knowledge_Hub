@@ -1,5 +1,7 @@
 # Planning Knowledge Hub — GitHub Pages package
 
+https://qinghou1.github.io/ACSP_Planning_Knowledge_Hub/
+
 This package is ready for static hosting on GitHub Pages. No build, npm installation, API key, or server is required. `index.html` is an exact copy of `20261101Planning-Knowledge-Hub-Updated.html`; both contain the same complete website, catalog, styles, scripts, and cover images.
 
 The prepared AI collection contains **60 resources: 20 Teaching, 20 Research, and 20 Applications**, with 20 different ACSP Full Member universities in each category. Research papers were first published in 2021–2026, with MDPI excluded. All research covers are attributed paper figures. The source audits and image credits are included.
