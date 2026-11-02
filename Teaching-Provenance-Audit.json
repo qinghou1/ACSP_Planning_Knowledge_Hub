@@ -1,0 +1,333 @@
+{
+  "auditedAt": "2026-11-01",
+  "baseline": "ACSP-Resource-Collection.xlsx / revised teaching catalog",
+  "purpose": "Verify primary university sources and provenance of supporting faculty-maintained materials.",
+  "statusDefinitions": {
+    "official-institutional": "Institution-hosted course/program/catalog/schedule or institution-authorized syllabus provider.",
+    "faculty-maintained-verified": "Faculty-maintained course materials corroborated through institutional faculty/course/laboratory records.",
+    "unverified": "This audit did not establish independent institutional sponsorship of the exact offering."
+  },
+  "counts": {
+    "official-institutional": 19,
+    "faculty-maintained-verified": 1
+  },
+  "records": [
+    {
+      "id": "teaching-01",
+      "institution": "University of Florida",
+      "title": "DCP 4300 / URP 6931: Artificial Intelligence in the Built Environment",
+      "auditedUrl": "https://dcp.ufl.edu/wp-content/uploads/2024/08/URP-6931-AI-in-the-Built-Environment-Fall2024-syllabus.pdf",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://dcp.ufl.edu/wp-content/uploads/2024/08/URP-6931-AI-in-the-Built-Environment-Fall2024-syllabus.pdf"
+      ],
+      "recommendedLandingUrl": "https://dcp.ufl.edu/wp-content/uploads/2024/08/URP-6931-AI-in-the-Built-Environment-Fall2024-syllabus.pdf",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "UF DCP hosts the archived Fall2024 syllabus PDF identifying the course and instructor.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-02",
+      "institution": "University of California Los Angeles",
+      "title": "Urban Data Science",
+      "auditedUrl": "https://urbandatascience.its.ucla.edu/",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://urbandatascience.its.ucla.edu/"
+      ],
+      "recommendedLandingUrl": "https://urbandatascience.its.ucla.edu/",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "UCLA Institute of Transportation Studies hosts this open UrbanDataScience course site on its own ucla.edu subdomain.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-03",
+      "institution": "Florida Atlantic University",
+      "title": "URP 4702: AI Applications in Design & Planning",
+      "auditedUrl": "https://www.fau.edu/uupc/documents/materials/2026/february-23-2026/urp-4702.pdf",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://www.fau.edu/uupc/documents/materials/2026/february-23-2026/urp-4702.pdf"
+      ],
+      "recommendedLandingUrl": "https://www.fau.edu/uupc/documents/materials/2026/february-23-2026/urp-4702.pdf",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "FAU UndergraduateUniversityProgramsCommittee hosts the proposed URP4702 syllabus in official February2026 materials.",
+      "limits": "Spring2027 syllabus/proposal is not independent confirmation of a scheduled section."
+    },
+    {
+      "id": "teaching-04",
+      "institution": "University of Southern California",
+      "title": "PPDE 642: Advanced Urban Analytics",
+      "auditedUrl": "https://priceschool.usc.edu/academics/masters/master-of-public-policy-mpp/mpp-curriculum/mpp-specialization-electives/",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://priceschool.usc.edu/academics/masters/master-of-public-policy-mpp/mpp-curriculum/mpp-specialization-electives/",
+        "https://priceschool.usc.edu/faculty/directory/geoff-boeing/",
+        "https://today.usc.edu/profile/geoff-boeing/",
+        "https://geoffboeing.com/lab/"
+      ],
+      "recommendedLandingUrl": "https://priceschool.usc.edu/academics/masters/master-of-public-policy-mpp/mpp-curriculum/mpp-specialization-electives/",
+      "recommendedAction": "Use official USC Price electives page as the card landing source; retain instructor repository in supporting sources/materials.",
+      "evidenceSummary": "Official USC Price curriculum lists PPDE642 AdvancedUrbanAnalytics. USC faculty profile establishes GeoffBoeing’s appointment; official USC Today profile links his personal geoffboeing.com website. His lab page names this course and the GitHub repository identifies his USC course and appliedML contents. The external repository is faculty-maintained material for a university-verified course, rather than an uncorroborated course claim.",
+      "limits": "No direct USC.edu link to the exact PPDE642 GitHub repository was found during this audit. Course existence/code and instructor affiliation are independently corroborated. The proposed university landing page confirms course code/title but is not itself the detailed syllabus.",
+      "previousExternalUrl": "https://github.com/gboeing/ppde642",
+      "secondaryMaterialsProvenance": "Faculty-maintained materials corroborated through university sources; use the institutional landing page as the primary link."
+    },
+    {
+      "id": "teaching-05",
+      "institution": "Michigan State University",
+      "title": "Urban AI: AI-Driven Decision Support for Real-World Urban Challenges",
+      "auditedUrl": "https://ai.msu.edu/ai-ready",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://ai.msu.edu/ai-ready",
+        "https://engineering.msu.edu/directory/faculty/houjie"
+      ],
+      "recommendedLandingUrl": "https://ai.msu.edu/ai-ready",
+      "recommendedAction": "Use official university program listing; omit unconfirmed duration/cohort details.",
+      "evidenceSummary": "MSU lists the exact Urban AI title under Category3non-credit AI-Ready Spartans awards and names SiChen. This verifies institutional sponsorship of the program.",
+      "limits": "MSU announcement does not link to the GitHubURL orstate16/20hours. Ownership/officialapprovalofthatURLwasnotindependentlyauthenticated. Coursematerialsremainexternallyhostedreferences.",
+      "previousExternalUrl": "https://jiehou-lab.github.io/urban-ai/"
+    },
+    {
+      "id": "teaching-06",
+      "institution": "University of Pennsylvania",
+      "title": "MUSA 5080 / CPLN 5920: Public Policy Analytics",
+      "auditedUrl": "https://www.design.upenn.edu/courses/musa-5080/cpln-5920",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://www.design.upenn.edu/courses/musa-5080/cpln-5920"
+      ],
+      "recommendedLandingUrl": "https://www.design.upenn.edu/courses/musa-5080/cpln-5920",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "Official Penn Weitzman course page supplies MUSA5080/CPLN5920, title, faculty and course scope.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-07",
+      "institution": "Columbia University",
+      "title": "PLAN 6113: Exploring Urban Data with Machine Learning",
+      "auditedUrl": "https://www.arch.columbia.edu/courses/14213-6063",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://www.arch.columbia.edu/courses/14213-6063"
+      ],
+      "recommendedLandingUrl": "https://www.arch.columbia.edu/courses/14213-6063",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "Official Columbia GSAPP Spring2026 course section supplies PLAN6113, title and instructor.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-08",
+      "institution": "Massachusetts Institute of Technology",
+      "title": "1.C01 / 1.C51: Machine Learning for Sustainable Systems",
+      "auditedUrl": "https://student.mit.edu/catalog/m1c.html",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://student.mit.edu/catalog/m1c.html"
+      ],
+      "recommendedLandingUrl": "https://student.mit.edu/catalog/m1c.html",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "MIT Registrar’s own catalog supplies1.C01/1.C51, title, cross-listing, instructor and spring-half-term description.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-09",
+      "institution": "Cornell University",
+      "title": "INFO 5430: AI for Urban Data",
+      "auditedUrl": "https://classes.cornell.edu/browse/roster/FA26/class/INFO/5430",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://classes.cornell.edu/browse/roster/FA26/class/INFO/5430"
+      ],
+      "recommendedLandingUrl": "https://classes.cornell.edu/browse/roster/FA26/class/INFO/5430",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "Official Cornell class roster provides Fall2026 INFO5430, title, credits and instructor. The main link is cornell.edu; the cloud mirror is not required for provenance.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-10",
+      "institution": "New York University",
+      "title": "CUSP-GX 8873: Urban Computing and Artificial Intelligence",
+      "auditedUrl": "https://bulletins.nyu.edu/courses/cusp_gx/",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://bulletins.nyu.edu/courses/cusp_gx/"
+      ],
+      "recommendedLandingUrl": "https://bulletins.nyu.edu/courses/cusp_gx/",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "NYU’s official2026–2027 bulletin provides CUSP-GX8873 and its AI/urbancomputing course description.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-15",
+      "institution": "Georgia Institute of Technology",
+      "title": "CSE 8803 IUC: Introduction to Urban Computing",
+      "auditedUrl": "https://faculty.cc.gatech.edu/~badityap/classes/cse8803-iuc-Spring23/",
+      "status": "faculty-maintained-verified",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://www.cc.gatech.edu/people/b-aditya-prakash",
+        "https://faculty.cc.gatech.edu/~badityap/",
+        "https://faculty.cc.gatech.edu/~badityap/classes/cse8803-iuc-Spring23/"
+      ],
+      "recommendedLandingUrl": "https://faculty.cc.gatech.edu/~badityap/classes/cse8803-iuc-Spring23/",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "The course is hosted within GeorgiaTech’s faculty.cc.gatech.edu service. The official CollegeofComputing directory confirms B.AdityaPrakash and links his university faculty website; its Teaching section explicitly lists CSE8803IUC IntroductiontoUrbanComputing,Spring2023.",
+      "limits": "Faculty-maintained archived course page, not a current registrar offering. Its host is institutional; no external-course replacement is needed."
+    },
+    {
+      "id": "teaching-16",
+      "institution": "University of California Berkeley",
+      "title": "CY PLAN C88: Data Science for Smart Cities",
+      "auditedUrl": "https://classes.berkeley.edu/content/2024-spring-cyplan-c88-001-lec-001",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://classes.berkeley.edu/content/2024-spring-cyplan-c88-001-lec-001",
+        "https://undergraduate.catalog.berkeley.edu/courses/1253492",
+        "https://cdss.berkeley.edu/dsus/academics/domain-emphasis/geospatial-info-and-technology"
+      ],
+      "recommendedLandingUrl": "https://classes.berkeley.edu/content/2024-spring-cyplan-c88-001-lec-001",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "Berkeley’s archived official class listing identifies CYPLAN C88 Spring2024, and the accessible current catalog confirms cross-listed CIVENG C88 and machine-learning objectives.",
+      "limits": "Archived class page may reject automated requests. The previous legacy GuidePDF redirects generically and is correctly absent from the current main source."
+    },
+    {
+      "id": "teaching-17",
+      "institution": "University of Michigan",
+      "title": "UT 439: Urban AI",
+      "auditedUrl": "https://taubmancollege.umich.edu/course/ut439-urban-ai-section-1-winter-2026/",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://taubmancollege.umich.edu/course/ut439-urban-ai-section-1-winter-2026/"
+      ],
+      "recommendedLandingUrl": "https://taubmancollege.umich.edu/course/ut439-urban-ai-section-1-winter-2026/",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "Official Michigan Taubman Winter2026 section page identifies UT439 UrbanAI and instructor XiaofanLiang.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-18",
+      "institution": "Harvard University",
+      "title": "AI, Machine Learning, and the Built Environment: Fundamentals & Proptech Applications",
+      "auditedUrl": "https://execed.gsd.harvard.edu/programs/artificial-intelligence-built-environment/",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://execed.gsd.harvard.edu/programs/artificial-intelligence-built-environment/",
+        "https://execed.gsd.harvard.edu/tech-and-ai-artificial-intelligence-real-estate/"
+      ],
+      "recommendedLandingUrl": "https://execed.gsd.harvard.edu/programs/artificial-intelligence-built-environment/",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "HarvardGSDExecutiveEducation hosts the program page on its own subdomain. Its official topic listing identifies the March2026 past program. An instructor’s outside appointment does not change Harvard’s role as program provider.",
+      "limits": "Professional education program, not a university credit course. Main page omits year; official parent listing corroborates2026."
+    },
+    {
+      "id": "teaching-19",
+      "institution": "University of Illinois Urbana-Champaign",
+      "title": "GGIS 527: Geospatial Artificial Intelligence & Machine Learning",
+      "auditedUrl": "https://courses.illinois.edu/schedule/2026/fall/GGIS/527",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://courses.illinois.edu/schedule/2026/fall/GGIS/527"
+      ],
+      "recommendedLandingUrl": "https://courses.illinois.edu/schedule/2026/fall/GGIS/527",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "Official Illinois CourseExplorer lists GGIS527, Fall2026, fourcredits and course description.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-20",
+      "institution": "University of Illinois Chicago",
+      "title": "PA 470: AI & Machine Learning",
+      "auditedUrl": "https://catalog.uic.edu/gcat/course-descriptions/pa/#pa470",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://catalog.uic.edu/gcat/course-descriptions/pa/#pa470"
+      ],
+      "recommendedLandingUrl": "https://catalog.uic.edu/gcat/course-descriptions/pa/#pa470",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "Official UIC graduate catalog lists PA470 AI&MachineLearning with credits and prerequisites.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-21",
+      "institution": "University of Washington Seattle",
+      "title": "GEOG 495/428: Geospatial Artificial Intelligence",
+      "auditedUrl": "https://geography.washington.edu/courses/2025/summer/geog/495/a",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://geography.washington.edu/courses/2025/summer/geog/495/a",
+        "https://hgis.csde.washington.edu/teaching/",
+        "https://geography.washington.edu/courses/2026/summer/geog/495/a"
+      ],
+      "recommendedLandingUrl": "https://geography.washington.edu/courses/2025/summer/geog/495/a",
+      "recommendedAction": "Use official UW Summer2025 course page as the card landing source; retain its explicitly linked GitHub syllabus as supporting materials.",
+      "evidenceSummary": "The official UW Geography Summer2025 course page identifies BoZhao, labels GeospatialArtificialIntelligence, and explicitly links the exact https://github.com/jakobzhao/geog428 syllabus. The university-hosted HGISLab teaching page also links that repository. This establishes institutional endorsement of the externally hosted materials.",
+      "limits": "The Summer2026 section is withdrawn. Current dataset already distinguishes the documented Summer2025 offering and does not claim the2026 section ran.",
+      "previousExternalUrl": "https://github.com/jakobzhao/geog428",
+      "secondaryMaterialsProvenance": "Faculty-maintained materials corroborated through university sources; use the institutional landing page as the primary link."
+    },
+    {
+      "id": "teaching-22",
+      "institution": "The University of Texas at Austin",
+      "title": "CRP 386: AI in Planning",
+      "auditedUrl": "https://utexas.simplesyllabus.com/api2/doc-pdf/7iq7bywpp/Spring-2025-CRP-386-01488-.pdf",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://provost.utexas.edu/the-office/academic-affairs/simple-syllabus/",
+        "https://utexas.simplesyllabus.com/api2/doc-pdf/7iq7bywpp/Spring-2025-CRP-386-01488-.pdf"
+      ],
+      "recommendedLandingUrl": "https://utexas.simplesyllabus.com/api2/doc-pdf/7iq7bywpp/Spring-2025-CRP-386-01488-.pdf",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "UT Austin Provost’s official page explicitly links utexas.simplesyllabus.com as the UT Austin SimpleSyllabus Library, explains Canvas integration and faculty publishing, and identifies it as an official syllabus service. The exact CRP386 Spring2025 PDF is indexed on this university-specific provider tenant.",
+      "limits": "The PDF timed out during this provenance pass; the official provider relationship is independently established. Earlier content verification inspected the syllabus. Do not classify it unofficial merely because its authorized provider uses a .com domain."
+    },
+    {
+      "id": "teaching-23",
+      "institution": "Texas A&M University",
+      "title": "GEOG 398: Aerial Imagery Analysis and Geospatial Machine Learning",
+      "auditedUrl": "https://catalog.tamu.edu/undergraduate/course-descriptions/geog/",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://catalog.tamu.edu/undergraduate/course-descriptions/geog/"
+      ],
+      "recommendedLandingUrl": "https://catalog.tamu.edu/undergraduate/course-descriptions/geog/",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "TexasA&M’s own undergraduate catalog course-description page lists GEOG398 and its geospatialML content.",
+      "limits": "Public provenance verified; current enrollment availability is not inferred."
+    },
+    {
+      "id": "teaching-24",
+      "institution": "University of Maryland",
+      "title": "GEOG 621: Introduction to GeoAI",
+      "auditedUrl": "https://app.testudo.umd.edu/soc/202701/GEOG/GEOG621",
+      "status": "official-institutional",
+      "verifiedOn": "2026-11-01",
+      "officialCorroboratingUrls": [
+        "https://app.testudo.umd.edu/soc/202701/GEOG/GEOG621"
+      ],
+      "recommendedLandingUrl": "https://app.testudo.umd.edu/soc/202701/GEOG/GEOG621",
+      "recommendedAction": "Retain",
+      "evidenceSummary": "UMD Testudo is the official Registrar ScheduleofClasses. Spring2027 GEOG621 page identifies course, credits, instructor and section restrictions.",
+      "limits": "Future Spring2027 listing, not evidence of completed instruction; dataset labels it accordingly."
+    }
+  ]
+}

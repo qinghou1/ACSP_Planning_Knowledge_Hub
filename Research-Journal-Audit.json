@@ -1,0 +1,551 @@
+[
+  {
+    "id": "research-01",
+    "title": "Symbiotic Planning Theory: The CORE Framework for Human–AI Cocreation in Urban Planning",
+    "journal": "Journal of the American Planning Association",
+    "publisher": "Taylor & Francis",
+    "doi": "10.1080/01944363.2026.2640038",
+    "firstPublishedDate": "2026-04-13",
+    "publicationYear": 2026,
+    "articleType": "Research article (planning theory)",
+    "peerReviewed": true,
+    "selectionRationale": "A central peer-reviewed planning journal; selected for its explicit human–AI planning theory and accountability framework.",
+    "evidenceURLs": [
+      "https://www.tandfonline.com/doi/full/10.1080/01944363.2026.2640038",
+      "https://dcp.ufl.edu/urp/uf-faculty-and-students-publish-new-planning-theory-for-accountable-human-ai-collaboration-in-cities-in-the-journal-of-the-american-planning-association-japa/",
+      "https://www.acsp.org/page/Members",
+      "https://doi.org/10.1080/01944363.2026.2640038"
+    ],
+    "representedUniversity": "University of Florida",
+    "affiliationEvidence": [
+      "https://www.tandfonline.com/doi/full/10.1080/01944363.2026.2640038",
+      "https://dcp.ufl.edu/urp/uf-faculty-and-students-publish-new-planning-theory-for-accountable-human-ai-collaboration-in-cities-in-the-journal-of-the-american-planning-association-japa/",
+      "https://www.acsp.org/page/Members",
+      "https://doi.org/10.1080/01944363.2026.2640038"
+    ],
+    "imageFile": "figures/research-01.jpg",
+    "imageSource": "https://dcp.ufl.edu/urp/uf-faculty-and-students-publish-new-planning-theory-for-accountable-human-ai-collaboration-in-cities-in-the-journal-of-the-american-planning-association-japa/",
+    "imageContext": "Paper figure · Figure 1",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-08",
+    "title": "How the marketing of real estate properties explains mortgage applicants by race and income",
+    "journal": "Environment and Planning B: Urban Analytics and City Science",
+    "publisher": "SAGE",
+    "doi": "10.1177/23998083241287956",
+    "firstPublishedDate": "2024-10-23",
+    "publicationYear": 2024,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Established urban analytics journal; text-analysis evidence directly connects AI methods with housing-market inequality.",
+    "evidenceURLs": [
+      "https://journals.sagepub.com/doi/10.1177/23998083241287956",
+      "https://www.design.upenn.edu/work/what-real-estate-listings-reveal-about-who-applies-mortgages",
+      "https://www.acsp.org/page/Members"
+    ],
+    "representedUniversity": "University of Pennsylvania",
+    "affiliationEvidence": [
+      "https://journals.sagepub.com/doi/10.1177/23998083241287956",
+      "https://www.design.upenn.edu/work/what-real-estate-listings-reveal-about-who-applies-mortgages",
+      "https://www.acsp.org/page/Members"
+    ],
+    "imageFile": "figures/research-08.jpg",
+    "imageSource": "https://www.design.upenn.edu/work/what-real-estate-listings-reveal-about-who-applies-mortgages",
+    "imageContext": "Paper figure · Figure 1",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-13",
+    "title": "AI-based urban layout generation model",
+    "journal": "npj Urban Sustainability",
+    "publisher": "Springer Nature",
+    "doi": "10.1038/s42949-026-00369-2",
+    "firstPublishedDate": "2026-04-04",
+    "publicationYear": 2026,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Peer-reviewed urban sustainability journal; selected for its empirical assessment of AI-generated urban layouts and environmental performance.",
+    "evidenceURLs": [
+      "https://www.nature.com/articles/s42949-026-00369-2",
+      "https://www.acsp.org/page/Members"
+    ],
+    "representedUniversity": "The University of Texas at Austin",
+    "affiliationEvidence": [
+      "https://www.nature.com/articles/s42949-026-00369-2",
+      "https://www.acsp.org/page/Members"
+    ],
+    "imageFile": "figures/research-13.jpg",
+    "imageSource": "https://www.nature.com/articles/s42949-026-00369-2/figures/2",
+    "imageContext": "Paper figure · Figure 2",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-15",
+    "title": "Aligning LLM with Humans for Travel Choices: A Persona-Based Embedding Learning Approach",
+    "journal": "Transportation Science",
+    "publisher": "INFORMS",
+    "doi": "10.1287/trsc.2025.0330",
+    "firstPublishedDate": "2026-06-16",
+    "publicationYear": 2026,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Established transportation research journal; directly evaluates LLM alignment with observed human travel choices.",
+    "evidenceURLs": [
+      "https://pubsonline.informs.org/doi/10.1287/trsc.2025.0330",
+      "https://arxiv.org/abs/2505.19003",
+      "https://limos.engin.umich.edu/publications/",
+      "https://www.acsp.org/page/Members",
+      "https://arxiv.org/pdf/2505.19003#page=1"
+    ],
+    "representedUniversity": "University of Michigan",
+    "affiliationEvidence": [
+      "https://pubsonline.informs.org/doi/10.1287/trsc.2025.0330",
+      "https://arxiv.org/abs/2505.19003",
+      "https://limos.engin.umich.edu/publications/",
+      "https://www.acsp.org/page/Members",
+      "https://arxiv.org/pdf/2505.19003#page=1"
+    ],
+    "imageFile": "figures/research-15.jpg",
+    "imageSource": "https://arxiv.org/pdf/2505.19003#page=8",
+    "imageContext": "Paper figure · Figure 1 (author preprint)",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-23",
+    "title": "A sub-meter resolution urban surface albedo dataset for 34 U.S. cities based on deep learning",
+    "journal": "Scientific Data",
+    "publisher": "Springer Nature",
+    "doi": "10.1038/s41597-025-05109-2",
+    "firstPublishedDate": "2025-05-14",
+    "publicationYear": 2025,
+    "articleType": "Data Descriptor",
+    "peerReviewed": true,
+    "selectionRationale": "Peer-reviewed research-data journal; selected for reusable, validated urban albedo evidence and a documented deep-learning workflow.",
+    "evidenceURLs": [
+      "https://www.nature.com/articles/s41597-025-05109-2",
+      "https://www.acsp.org/page/Members"
+    ],
+    "representedUniversity": "Cornell University",
+    "affiliationEvidence": [
+      "https://www.nature.com/articles/s41597-025-05109-2",
+      "https://www.acsp.org/page/Members"
+    ],
+    "imageFile": "figures/research-23.jpg",
+    "imageSource": "https://www.nature.com/articles/s41597-025-05109-2/figures/7",
+    "imageContext": "Paper figure · Figure 7",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-25",
+    "title": "Urban motifs associated with population health",
+    "journal": "Nature Health",
+    "publisher": "Springer Nature",
+    "doi": "10.1038/s44360-026-00151-9",
+    "firstPublishedDate": "2026-07-01",
+    "publicationYear": 2026,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Externally peer-reviewed interdisciplinary health journal article with named review acknowledgments; graph learning links urban design and neighborhood health.",
+    "evidenceURLs": [
+      "https://www.nature.com/articles/s44360-026-00151-9",
+      "https://www.acsp.org/page/Members"
+    ],
+    "representedUniversity": "Massachusetts Institute of Technology",
+    "affiliationEvidence": [
+      "https://www.nature.com/articles/s44360-026-00151-9",
+      "https://www.acsp.org/page/Members"
+    ],
+    "imageFile": "figures/research-25.jpg",
+    "imageSource": "https://www.nature.com/articles/s44360-026-00151-9/figures/3",
+    "imageContext": "Paper figure · Figure 3",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-26",
+    "title": "Transferable human mobility network reconstruction with neuroGravity",
+    "journal": "Nature Computational Science",
+    "publisher": "Springer Nature",
+    "doi": "10.1038/s43588-026-01003-y",
+    "firstPublishedDate": "2026-06-12",
+    "publicationYear": 2026,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Externally peer-reviewed computational science journal with published review information; evaluates transferable mobility modeling and spatial income segregation.",
+    "evidenceURLs": [
+      "https://www.nature.com/articles/s43588-026-01003-y",
+      "https://www.acsp.org/page/Members"
+    ],
+    "representedUniversity": "University of California Berkeley",
+    "affiliationEvidence": [
+      "https://www.nature.com/articles/s43588-026-01003-y",
+      "https://www.acsp.org/page/Members"
+    ],
+    "imageFile": "figures/research-26.jpg",
+    "imageSource": "https://www.nature.com/articles/s43588-026-01003-y/figures/3",
+    "imageContext": "Paper figure · Figure 3",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-27",
+    "title": "Urban planning in the era of large language models",
+    "journal": "Nature Computational Science",
+    "publisher": "Springer Nature",
+    "doi": "10.1038/s43588-025-00846-1",
+    "firstPublishedDate": "2025-09-08",
+    "publicationYear": 2025,
+    "articleType": "Perspective (externally peer-reviewed)",
+    "peerReviewed": true,
+    "selectionRationale": "Publisher explicitly acknowledges external reviewers Massimiliano Luca and Thomas Sanchez; selected for a substantive framework connecting LLMs to planning concepts, designs, and evaluation.",
+    "evidenceURLs": [
+      "https://www.nature.com/articles/s43588-025-00846-1",
+      "https://www.acsp.org/page/Members"
+    ],
+    "representedUniversity": "Northeastern University",
+    "affiliationEvidence": [
+      "https://www.nature.com/articles/s43588-025-00846-1",
+      "https://www.acsp.org/page/Members"
+    ],
+    "imageFile": "figures/research-27.jpg",
+    "imageSource": "https://www.nature.com/articles/s43588-025-00846-1/figures/1",
+    "imageContext": "Paper figure · Figure 1",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-29",
+    "title": "Ubiquitous data-driven framework for traffic emission estimation and policy evaluation",
+    "journal": "Nature Sustainability",
+    "publisher": "Springer Nature",
+    "doi": "10.1038/s41893-026-01797-9",
+    "firstPublishedDate": "2026-04-02",
+    "publicationYear": 2026,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Externally peer-reviewed sustainability journal article with published review information; computer vision supports high-resolution transport-policy evaluation.",
+    "evidenceURLs": [
+      "https://www.nature.com/articles/s41893-026-01797-9",
+      "https://www.acsp.org/page/Members"
+    ],
+    "representedUniversity": "Arizona State University",
+    "affiliationEvidence": [
+      "https://www.nature.com/articles/s41893-026-01797-9",
+      "https://www.acsp.org/page/Members"
+    ],
+    "imageFile": "figures/research-29.jpg",
+    "imageSource": "https://www.nature.com/articles/s41893-026-01797-9/figures/3",
+    "imageContext": "Paper figure · Figure 3",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-41",
+    "title": "Lessons from a Human-in-the-Loop Machine Learning Approach for Identifying Vacant, Abandoned, and Deteriorated Properties in Savannah, Georgia",
+    "journal": "Journal of Planning Education and Research",
+    "publisher": "SAGE",
+    "doi": "10.1177/0739456X241273945",
+    "firstPublishedDate": "2024-08-31",
+    "publicationYear": 2024,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Established peer-reviewed planning journal; human-in-the-loop methods and municipal collaboration offer direct relevance to property-condition planning.",
+    "evidenceURLs": [
+      "https://journals.sagepub.com/doi/10.1177/0739456X241273945",
+      "https://arxiv.org/abs/2407.11138",
+      "https://planning.gatech.edu/sites/default/files/newsletters/SCaRP_Fall_Semester_2024_Highlights.html",
+      "https://www.acsp.org/page/Members"
+    ],
+    "representedUniversity": "Georgia Institute of Technology",
+    "affiliationEvidence": [
+      "https://journals.sagepub.com/doi/10.1177/0739456X241273945",
+      "https://arxiv.org/abs/2407.11138",
+      "https://planning.gatech.edu/sites/default/files/newsletters/SCaRP_Fall_Semester_2024_Highlights.html",
+      "https://www.acsp.org/page/Members"
+    ],
+    "imageFile": "figures/research-41.jpg",
+    "imageSource": "https://arxiv.org/pdf/2407.11138#page=9",
+    "imageContext": "Paper figure · Figure 1 (author manuscript)",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-44",
+    "title": "Reducing the social inequity of neighborhood visual environment in Los Angeles through computer vision and multi-model machine learning",
+    "journal": "Sustainable Cities and Society",
+    "publisher": "Elsevier",
+    "doi": "10.1016/j.scs.2024.106062",
+    "firstPublishedDate": "2024-12-15",
+    "publicationYear": 2024,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Established urban sustainability research journal; combines computer vision and validated ML to examine neighborhood visual inequality.",
+    "evidenceURLs": [
+      "https://www.sciencedirect.com/science/article/pii/S2210670724008849",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11781154/",
+      "https://dornsife.usc.edu/spatial/profile/shaokun-lyu/"
+    ],
+    "representedUniversity": "University of Southern California",
+    "affiliationEvidence": [
+      "https://www.sciencedirect.com/science/article/pii/S2210670724008849",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11781154/",
+      "https://dornsife.usc.edu/spatial/profile/shaokun-lyu/"
+    ],
+    "imageFile": "figures/research-44.jpg",
+    "imageSource": "https://ars.els-cdn.com/content/image/1-s2.0-S2210670724008849-gr5.jpg",
+    "imageContext": "Paper figure · Figure 5",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-46",
+    "title": "Built environment interventions for emission mitigation: A machine learning analysis of travel-related CO2 in a developing city",
+    "journal": "Journal of Transport Geography",
+    "publisher": "Elsevier",
+    "doi": "10.1016/j.jtrangeo.2023.103632",
+    "firstPublishedDate": "2023",
+    "publicationYear": 2023,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Established transport geography journal; interpretable boosted-tree analysis directly addresses built-environment interventions and travel emissions.",
+    "evidenceURLs": [
+      "https://www.sciencedirect.com/science/article/pii/S0966692323001047",
+      "https://experts.umn.edu/en/publications/built-environment-interventions-for-emission-mitigation-a-machine/",
+      "https://www.hhh.umn.edu/sites/hhh.umn.edu/files/2024-01/CV_Cao.pdf"
+    ],
+    "representedUniversity": "University of Minnesota",
+    "affiliationEvidence": [
+      "https://www.sciencedirect.com/science/article/pii/S0966692323001047",
+      "https://experts.umn.edu/en/publications/built-environment-interventions-for-emission-mitigation-a-machine/",
+      "https://www.hhh.umn.edu/sites/hhh.umn.edu/files/2024-01/CV_Cao.pdf"
+    ],
+    "imageFile": "figures/research-46.jpg",
+    "imageSource": "https://ars.els-cdn.com/content/image/1-s2.0-S0966692323001047-gr2.jpg",
+    "imageContext": "Paper figure · Figure 2",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-47",
+    "title": "Mapping trees along urban street networks with deep learning and street-level imagery",
+    "journal": "ISPRS Journal of Photogrammetry and Remote Sensing",
+    "publisher": "Elsevier",
+    "doi": "10.1016/j.isprsjprs.2021.01.016",
+    "firstPublishedDate": "2021",
+    "publicationYear": 2021,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Established photogrammetry and remote-sensing research journal; validated instance segmentation supports urban street-tree inventory methods.",
+    "evidenceURLs": [
+      "https://www.sciencedirect.com/science/article/pii/S0924271621000228",
+      "https://www.research-collection.ethz.ch/entities/publication/27500c2b-6ff2-4fa7-b696-ad19e0585f55",
+      "https://forestry.ubc.ca/faculty-profile/tahia-devisscher/",
+      "https://www.postdocs.ubc.ca/spotlight/tahia-devisscher"
+    ],
+    "representedUniversity": "University of British Columbia",
+    "affiliationEvidence": [
+      "https://www.sciencedirect.com/science/article/pii/S0924271621000228",
+      "https://www.research-collection.ethz.ch/entities/publication/27500c2b-6ff2-4fa7-b696-ad19e0585f55",
+      "https://forestry.ubc.ca/faculty-profile/tahia-devisscher/",
+      "https://www.postdocs.ubc.ca/spotlight/tahia-devisscher"
+    ],
+    "imageFile": "figures/research-47.jpg",
+    "imageSource": "https://ars.els-cdn.com/content/image/1-s2.0-S0924271621000228-gr3.jpg",
+    "imageContext": "Paper figure · Figure 3",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-49",
+    "title": "Deep Learning–Based Assessment of Built Environment From Satellite Images and Cardiometabolic Disease Prevalence",
+    "journal": "JAMA Cardiology",
+    "publisher": "American Medical Association",
+    "doi": "10.1001/jamacardio.2024.0749",
+    "firstPublishedDate": "2024-05-01",
+    "publicationYear": 2024,
+    "articleType": "Original Investigation",
+    "peerReviewed": true,
+    "selectionRationale": "Established peer-reviewed clinical research journal; original investigation connects built-environment computer vision with spatial health inequalities and reports validation limitations.",
+    "evidenceURLs": [
+      "https://jamanetwork.com/journals/jamacardiology/fullarticle/2818187",
+      "https://pubmed.ncbi.nlm.nih.gov/38691380/"
+    ],
+    "representedUniversity": "Harvard University",
+    "affiliationEvidence": [
+      "https://jamanetwork.com/journals/jamacardiology/fullarticle/2818187",
+      "https://pubmed.ncbi.nlm.nih.gov/38691380/"
+    ],
+    "imageFile": "figures/research-49.jpg",
+    "imageSource": "https://jamanetwork.com/journals/jamacardiology/fullarticle/2818187#hoi240016f1",
+    "imageContext": "Paper figure · Figure 1",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-50",
+    "title": "Urban form and structure explain variability in spatial inequality of property flood risk among US counties",
+    "journal": "Communications Earth & Environment",
+    "publisher": "Springer Nature",
+    "doi": "10.1038/s43247-024-01337-3",
+    "firstPublishedDate": "2024-04-01",
+    "publicationYear": 2024,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Externally peer-reviewed environmental research journal with a published peer-review file; interpretable ML directly addresses spatial flood-risk inequality and planning.",
+    "evidenceURLs": [
+      "https://www.nature.com/articles/s43247-024-01337-3"
+    ],
+    "representedUniversity": "Texas A&M University",
+    "affiliationEvidence": [
+      "https://www.nature.com/articles/s43247-024-01337-3"
+    ],
+    "imageFile": "figures/research-50.jpg",
+    "imageSource": "https://www.nature.com/articles/s43247-024-01337-3/figures/6",
+    "imageContext": "Paper figure · Figure 6",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-51",
+    "title": "Transfer learning reveals large discrepancies between air and land surface temperatures in cities",
+    "journal": "Nature Communications",
+    "publisher": "Springer Nature",
+    "doi": "10.1038/s41467-026-73716-7",
+    "firstPublishedDate": "2026-05-27",
+    "publicationYear": 2026,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Externally peer-reviewed multidisciplinary research journal; validated transfer learning provides directly useful evidence for urban heat assessment and climate adaptation.",
+    "evidenceURLs": [
+      "https://www.nature.com/articles/s41467-026-73716-7",
+      "https://cee.illinois.edu/news/new-AI-assisted-climate-study-reveals-what-urban-heat-really-feels-like"
+    ],
+    "representedUniversity": "University of Illinois Urbana-Champaign",
+    "affiliationEvidence": [
+      "https://www.nature.com/articles/s41467-026-73716-7",
+      "https://cee.illinois.edu/news/new-AI-assisted-climate-study-reveals-what-urban-heat-really-feels-like"
+    ],
+    "imageFile": "figures/research-51.jpg",
+    "imageSource": "https://www.nature.com/articles/s41467-026-73716-7/figures/2",
+    "imageContext": "Paper figure · Figure 2",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-52",
+    "title": "Multimodal deep learning from satellite and street-level imagery for measuring income, overcrowding, and environmental deprivation in urban areas",
+    "journal": "Remote Sensing of Environment",
+    "publisher": "Elsevier",
+    "doi": "10.1016/j.rse.2021.112339",
+    "firstPublishedDate": "2021",
+    "publicationYear": 2021,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Established remote-sensing research journal; systematic comparisons and validation directly support measurement of fine-scale urban inequalities using complementary imagery.",
+    "evidenceURLs": [
+      "https://www.sciencedirect.com/science/article/pii/S0034425721000572",
+      "https://pubmed.ncbi.nlm.nih.gov/33941991/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7985619/"
+    ],
+    "representedUniversity": "University of Washington Seattle",
+    "affiliationEvidence": [
+      "https://www.sciencedirect.com/science/article/pii/S0034425721000572",
+      "https://pubmed.ncbi.nlm.nih.gov/33941991/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7985619/"
+    ],
+    "imageFile": "figures/research-52.jpg",
+    "imageSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7985619/#f0035",
+    "imageContext": "Paper figure · Figure 7",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-70",
+    "title": "CitySurfaces: City-scale semantic segmentation of sidewalk materials",
+    "journal": "Sustainable Cities and Society",
+    "publisher": "Elsevier",
+    "doi": "10.1016/j.scs.2021.103630",
+    "firstPublishedDate": "2022-01-06",
+    "publicationYear": 2022,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Established urban sustainability research journal; directly compares city-scale semantic-segmentation methods for sidewalk materials and provides reusable evidence for public-space and infrastructure research.",
+    "evidenceURLs": [
+      "https://www.sciencedirect.com/science/article/pii/S2210670721008933",
+      "https://www.evl.uic.edu/documents/sustainablecities_fmiranda.pdf",
+      "https://www.evl.uic.edu/news/2022/2022-04-01-2620/"
+    ],
+    "representedUniversity": "University of Illinois Chicago",
+    "affiliationEvidence": [
+      "PublishedPDF firstpage names Miranda with affiliationc: UniversityofIllinoisatChicago. Official UIC EVL page hosts the samePDF and DOI.",
+      "https://www.sciencedirect.com/science/article/pii/S2210670721008933",
+      "https://www.evl.uic.edu/documents/sustainablecities_fmiranda.pdf",
+      "https://www.evl.uic.edu/news/2022/2022-04-01-2620/"
+    ],
+    "imageFile": "figures/research-70.jpg",
+    "imageSource": "https://www.evl.uic.edu/documents/sustainablecities_fmiranda.pdf#page=6",
+    "imageContext": "Paper figure · Figure 6",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-71",
+    "title": "Mapping the walk: A scalable computer vision approach for generating sidewalk network datasets from aerial imagery",
+    "journal": "Computers, Environment and Urban Systems",
+    "publisher": "Elsevier",
+    "doi": "10.1016/j.compenvurbsys.2023.101950",
+    "firstPublishedDate": "2023-02-22",
+    "publicationYear": 2023,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Established specialist urban analytics journal; validated computer vision and network extraction directly support pedestrian-infrastructure data collection and planning.",
+    "evidenceURLs": [
+      "https://www.sciencedirect.com/science/article/pii/S0198971523000133",
+      "https://www.evl.uic.edu/documents/ceus_mappingthewalk_miranda.pdf",
+      "https://www.evl.uic.edu/news/2023/2023-02-22-2703/",
+      "https://dspace.mit.edu/entities/publication/70d14d72-b69c-4319-9f76-9572870caba4"
+    ],
+    "representedUniversity": "New York University",
+    "affiliationEvidence": [
+      "Published journal PDF first page identifies Claudio T. Silva with NYU Computer Science and Engineering and Center for Data Science.",
+      "https://www.evl.uic.edu/documents/ceus_mappingthewalk_miranda.pdf"
+    ],
+    "imageFile": "figures/research-71.jpg",
+    "imageSource": "https://ars.els-cdn.com/content/image/1-s2.0-S0198971523000133-gr7.jpg",
+    "imageContext": "Paper figure · Figure 7",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  },
+  {
+    "id": "research-72",
+    "title": "Predicting human mobility flows in cities using deep learning on satellite imagery",
+    "journal": "Nature Communications",
+    "publisher": "Springer Nature",
+    "doi": "10.1038/s41467-025-65373-z",
+    "firstPublishedDate": "2025-11-24",
+    "publicationYear": 2025,
+    "articleType": "Research article",
+    "peerReviewed": true,
+    "selectionRationale": "Externally peer-reviewed Nature Communications research article with an available peer-review file; validated deep learning and satellite imagery directly address urban mobility estimation and geographic transferability. No impact factor or quartile claim is made.",
+    "evidenceURLs": [
+      "https://www.nature.com/articles/s41467-025-65373-z",
+      "https://geography.wisc.edu/geods/archives/author/sgao93"
+    ],
+    "representedUniversity": "University of Wisconsin-Madison",
+    "affiliationEvidence": [
+      "Publisher affiliations: Song Gao, Qunying Huang and Aslıgül Göçmen, Department of Geography, University of Wisconsin, Madison, USA.",
+      "https://www.nature.com/articles/s41467-025-65373-z"
+    ],
+    "imageFile": "figures/research-72.jpg",
+    "imageSource": "https://www.nature.com/articles/s41467-025-65373-z/figures/2",
+    "imageContext": "Paper figure · Figure 2",
+    "excludedPublisherMDPI": false,
+    "preprintOnly": false
+  }
+]

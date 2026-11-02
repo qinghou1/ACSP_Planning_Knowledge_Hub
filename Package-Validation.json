@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "resources": 60,
+  "categories": {
+    "Teaching": 20,
+    "Research": 20,
+    "Applications": 20
+  },
+  "distinctSchoolsPerCategory": {
+    "Teaching": 20,
+    "Research": 20,
+    "Applications": 20
+  },
+  "activeCoverAssets": 49,
+  "workbookMatchesCatalog": true,
+  "csvMatchesCatalog": true,
+  "allHtmlMetadataMatchesCatalog": true,
+  "allEmbeddedImagesMatchAssets": true,
+  "allHtmlSeedSnapshotsIdentical": true,
+  "indexMatchesStandaloneBytes": true,
+  "fullHubSha256": "321e13cafdf2b57dc2a4edd564aaa80fcf2cab67ab80e9cd40e011b9fb38aa01",
+  "staticDependencies": "inline",
+  "navigation": "fragment routes; no root-relative asset URLs",
+  "researchPolicy": "journal papers first published from 2021 onward; MDPI excluded",
+  "browserQA": {
+    "projectSubpathHomepage": "passed",
+    "collectionNavigation": "passed",
+    "researchCategory": {
+      "entries": 20,
+      "distinctSchools": 20,
+      "journalLabels": 20,
+      "sourceFigureLinks": 20,
+      "firstThreeImagesLoaded": true,
+      "horizontalOverflow": false
+    },
+    "directResourceLinkAndReload": "passed"
+  },
+  "updatePipelineQA": {
+    "excelExportRebuildVerify": "passed",
+    "defaultRebuildRepairsStaleIndex": true,
+    "invalidResearchCatalogPreservesAllThreeHtmlFiles": true,
+    "verifierRejectsStaleIndex": true
+  }
+}
